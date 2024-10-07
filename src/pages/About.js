@@ -8,9 +8,6 @@ const About = () => {
         Founded in 2023, our church has served as a beacon of faith and community for over a century. From humble beginnings in a small wooden chapel, our congregation has grown to become one of the most vibrant and welcoming communities in the region.
       </p>
       <p>
-        Over the years, we’ve expanded both our ministries and our outreach programs. The original church building was replaced in 1955 with the beautiful stone structure that stands today, and in 1990, we added a new fellowship hall to accommodate our growing membership.
-      </p>
-      <p>
         Our church has always focused on spreading the message of love, hope, and faith through meaningful worship, community service, and educational programs. With ministries for children, youth, adults, and seniors, we strive to nurture spiritual growth and foster a sense of belonging for everyone who walks through our doors.
       </p>
       <p>

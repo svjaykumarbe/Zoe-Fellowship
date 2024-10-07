@@ -1,58 +1,43 @@
 import React from 'react';
+import './ContactUs.css'; // CSS file for styling
 
-const Contact = () => {
+const pastors = [
+  {
+    name: 'Pastor Daniel Shetty',
+    role: 'Senior Pastor',
+    email: 'daniel@zoeinternationalministry.com',
+    phone: '+1 (647) 888-3776',
+    bio: 'Pastor Daniel Shetty has been leading our church for over 10 years with a focus on community, spiritual growth, and service to others.',
+    image: './Daniel.jpg', // Replace with actual image path
+  },
+  {
+    name: 'Sunitha Daniel',
+    role: 'Associate Pastor',
+    email: 'sunitha@zoeinternationalministry.com',
+    phone: '+1 (416) 662-9270',
+    bio: 'Sunitha Daniel is passionate about worship, teaching, and helping others grow in their faith journey.',
+    image: './Sunitha.jpg', // Replace with actual image path
+  },
+];
+
+const ContactUs = () => {
   return (
-    <div className="container">
-      <h1>Contact Us</h1>
-      <p>
-        We are here to serve you. If you have any questions or need assistance, feel free to reach out to us. Below are the details of our pastors and staff members. We would love to connect with you!
-      </p>
-
-      <table className="table table-striped table-hover mt-4">
-        <thead>
-          <tr>
-            <th>Name</th>
-            <th>Role</th>
-            <th>Phone Number</th>
-            <th>Email</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Pastor Daniel Sheety</td>
-            <td>Senior Pastor</td>
-            <td>(647) 888-3776</td>
-            <td>john.doe@church.com</td>
-          </tr>
-          <tr>
-            <td>Sunitha Daniel</td>
-            <td>Associate Pastor</td>
-            <td>(416) 662-9270</td>
-            <td>jane.smith@church.com</td>
-          </tr>
-          <tr>
-            <td>No Name</td>
-            <td>Chruch Memeber</td>
-            <td>(555) 345-6789</td>
-            <td>mark.johnson@church.com</td>
-          </tr>
-          <tr>
-            <td>No Name</td>
-            <td>Chruch Member</td>
-            <td>(555) 456-7890</td>
-            <td>mary.lee@church.com</td>
-          </tr>
-        </tbody>
-      </table>
-
-      <h2>Church Address</h2>
-      <p>
-        123 Church Street, City, State, ZIP <br />
-        Phone: (555) 987-6543 <br />
-        Email: info@church.com
-      </p>
+    <div className="contact-us-container">
+      <h2>Contact Our Pastors</h2>
+      <div className="pastor-grid">
+        {pastors.map((pastor, index) => (
+          <div className="pastor-card" key={index}>
+            <img src={pastor.image} alt={pastor.name} className="pastor-image" />
+            <h3>{pastor.name}</h3>
+            <p className="role">{pastor.role}</p>
+            <p><strong>Email:</strong> <a href={`mailto:${pastor.email}`}>{pastor.email}</a></p>
+            <p><strong>Phone:</strong> <a href={`tel:${pastor.phone}`}>{pastor.phone}</a></p>
+            <p className="bio">{pastor.bio}</p>
+          </div>
+        ))}
+      </div>
     </div>
   );
 };
 
-export default Contact;
+export default ContactUs;

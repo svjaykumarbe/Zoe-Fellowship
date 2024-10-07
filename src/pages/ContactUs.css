@@ -1,0 +1,64 @@
+.contact-us-container {
+    padding: 40px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+  }
+  
+  h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #0d6efd;
+  }
+  
+  .pastor-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .pastor-card {
+    width: 300px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+  }
+  
+  .pastor-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
+  
+  .pastor-card h3 {
+    font-size: 1.5rem;
+    color: #0d6efd;
+  }
+  
+  .pastor-card .role {
+    font-size: 1rem;
+    font-style: italic;
+    color: #666;
+  }
+  
+  .pastor-card p {
+    font-size: 1rem;
+    color: #333;
+  }
+  
+  .pastor-card a {
+    color: #0d6efd;
+    text-decoration: none;
+  }
+  
+  .pastor-card a:hover {
+    text-decoration: underline;
+  }
+  
+  .bio {
+    margin-top: 10px;
+    color: #555;
+  }  

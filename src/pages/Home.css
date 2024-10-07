@@ -1,0 +1,100 @@
+.home-container {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Hero Section */
+  .hero-section {
+    position: relative;
+    text-align: center;
+  }
+  
+  .hero-image {
+    width: 100%;
+    height: auto;
+    max-height: 500px;
+    object-fit: cover;
+  }
+  
+  .hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+  
+  .hero-text h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+  }
+  
+  .hero-text p {
+    font-size: 1.5rem;
+  }
+  
+  /* About Section */
+  .about-section {
+    margin-top: 40px;
+  }
+  
+  .about-section h2 {
+    font-size: 2rem;
+    color: #0d6efd;
+    margin-bottom: 20px;
+  }
+  
+  .about-section p {
+    font-size: 1.2rem;
+    color: #555;
+    line-height: 1.6;
+  }
+  
+  /* Mission Section */
+  .mission-section {
+    margin-top: 40px;
+  }
+  
+  .mission-section h2 {
+    font-size: 2rem;
+    color: #0d6efd;
+    margin-bottom: 20px;
+  }
+  
+  .mission-section p {
+    font-size: 1.2rem;
+    color: #555;
+    line-height: 1.6;
+  }
+  
+  .mission-images {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  .mission-image {
+    width: 48%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* History Section */
+  .history-section {
+    margin-top: 40px;
+  }
+  
+  .history-section h2 {
+    font-size: 2rem;
+    color: #0d6efd;
+    margin-bottom: 20px;
+  }
+  
+  .history-section p {
+    font-size: 1.2rem;
+    color: #555;
+    line-height: 1.6;
+  }
+  

@@ -10,13 +10,16 @@ import Footer from './components/Footer';
 import './index.css';
 import './App.css';
 import './style.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 function App() {
   return (
     <Router>
+      <div className="wrapper">
       <Navbar />
       <div className="container mt-5">
+      <div className="content"> {/* Main content */}
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
@@ -25,7 +28,9 @@ function App() {
           <Route path="/contact" element={<Contact />} />
         </Routes>
       </div>
+      </div>
       <Footer />
+      </div>
     </Router>
   );
 }
