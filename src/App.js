@@ -5,6 +5,12 @@ import Home from './pages/Home';
 import About from './pages/About';
 import Ministries from './pages/Ministries';
 import Events from './pages/Events';
+import Contact from './pages/Contact';
+import Footer from './components/Footer';
+import './index.css';
+import './App.css';
+import './style.css';
+
 
 function App() {
   return (
