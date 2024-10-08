@@ -8,9 +8,8 @@ const Home = () => {
         <img src="./churchPic.jpg" alt="Church" className="hero-image" />
         <div className="hero-text">
           <h1>Welcome to Our Church</h1>
-          <p>
-            Join us in celebrating faith, community, and worship. Our doors are always open to
-            everyone.
+          <p style={{ color: '#f5f5f5' }}>
+          Join us in celebrating faith, community, and worship. Our doors are always open to everyone.
           </p>
         </div>
       </section>
