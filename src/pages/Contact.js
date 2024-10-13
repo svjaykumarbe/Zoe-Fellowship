@@ -12,7 +12,7 @@ const pastors = [
   },
   {
     name: 'Sunitha Daniel',
-    role: 'Associate Pastor',
+    role: 'Associate Director',
     email: 'sunitha@zoeinternationalministry.com',
     phone: '+1 (416) 662-9270',
     bio: 'Sunitha Daniel is passionate about worship, teaching, and helping others grow in their faith journey.',
