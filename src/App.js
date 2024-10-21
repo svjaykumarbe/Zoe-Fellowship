@@ -7,6 +7,8 @@ import Ministries from './pages/Ministries';
 import Events from './pages/Events';
 import Contact from './pages/Contact';
 import Footer from './components/Footer';
+import Donation from './pages/Donation';
+import Support from './pages/Support'; // Import Support page
 import './index.css';
 import './App.css';
 import './style.css';
@@ -26,6 +28,8 @@ function App() {
           <Route path="/ministries" element={<Ministries />} />
           <Route path="/events" element={<Events />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/support" element={<Support />} /> {/* Updated for React Router v6 */}
+          <Route path="/donation" element={<Donation />} /> {/* Updated for React Router v6 */}
         </Routes>
       </div>
       </div>

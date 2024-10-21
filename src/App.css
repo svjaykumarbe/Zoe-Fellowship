@@ -27,6 +27,19 @@
 .App-link {
   color: #61dafb;
 }
+/* Add this in your main stylesheet */
+.navbar-nav .nav-item .dropdown-menu {
+  background-color: #f9f9f9;
+}
+
+.navbar-nav .nav-item .dropdown-item {
+  color: #333;
+}
+
+.navbar-nav .nav-item .dropdown-item:hover {
+  background-color: #007bff;
+  color: white;
+}
 
 @keyframes App-logo-spin {
   from {
