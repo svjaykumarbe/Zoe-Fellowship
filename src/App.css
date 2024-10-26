@@ -49,3 +49,200 @@
     transform: rotate(360deg);
   }
 }
+/* In your App.css or style.css */
+.volunteer-section {
+  background-color: #f9f9f9;
+  padding: 20px;
+  margin-top: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.volunteer-section h2 {
+  color: #003366;
+}
+
+.volunteer-section ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.volunteer-section a {
+  color: #007bff;
+}
+
+.volunteer-section a:hover {
+  color: #0056b3;
+}
+
+.volunteer-link {
+  color: #007bff;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.volunteer-link:hover {
+  color: #0056b3;
+}
+/* General styles */
+.app {
+  display: flex;
+}
+
+/* For Header */
+header {
+  font-size: 2.5rem; /* Increase font size */
+  padding: 20px 0; /* Add padding to increase size visually */
+  text-align: center; /* Center the header */
+  font-weight: bold;
+}
+
+/* Style the container */
+.container {
+  width: 100%;
+  padding: 20px;
+}
+
+/* Home page background */
+.home-page {
+  background-color: blue; /* Set background color to blue */
+  color: white; /* Adjust text color to contrast with the background */
+  padding: 20px;
+  min-height: 100vh; /* Ensure the page fills the screen */
+}
+
+/* Menu Styling */
+.menu {
+  display: flex;
+  flex-direction: column; /* Stack menu items vertically */
+  align-items: flex-start; /* Align menu items to the left */
+  padding-left: 20px;
+  padding-top: 20px;
+  background-color: #f0f0f0; /* Light background for the sidebar menu */
+  min-width: 200px;
+  height: 100vh; /* Full height for the sidebar */
+}
+
+.menu a {
+  text-decoration: none;
+  font-size: 1.2rem; /* Adjust font size */
+  color: #333;
+  margin: 10px 0;
+  padding: 10px;
+}
+
+.menu a:hover {
+  background-color: #ddd; /* Highlight on hover */
+  color: #000;
+}
+/* Home Page Styling */
+.home-page {
+  background-color: white;  /* Set background to white */
+  color: blue;              /* Set font color to blue */
+  padding: 20px;
+  min-height: 80vh;         /* To make sure the footer isn't pushed up */
+}
+
+/* Make sure your links in the home page also use the correct color */
+.home-page a {
+  color: darkblue;
+}
+/* Footer Styling */
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: #333; /* Change this color as per your footer design */
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+/* Wrapper to hold the content and footer */
+.wrapper {
+  min-height: 100vh;
+  position: relative;
+  padding-bottom: 50px; /* Space for the footer */
+}
+
+/* Content of the page to take full space but not overlap the footer */
+.content {
+  padding-bottom: 50px; /* Prevent content from overlapping the footer */
+}
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.app-container {
+  display: flex;
+  min-height: 100vh;
+}
+
+.navbar {
+  width: 250px; /* Width of the sidebar */
+  background-color: #f8f9fa; /* Light background for sidebar */
+  padding-top: 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%; /* Full height of the screen */
+}
+
+.main-content {
+  margin-left: 250px; /* Same width as sidebar */
+  flex-grow: 1;
+  padding: 20px;
+  background-color: #fff;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Home.css */
+
+.home-page {
+  background-color: white; /* Ensuring background is white */
+  color: blue; /* Set font color to blue */
+  padding: 20px;
+}
+
+.header h1 {
+  font-size: 2.5em;
+  color: blue;
+}
+
+.mission h2, .ministries h2 {
+  color: blue;
+}
+
+.ministry-link {
+  color: blue;
+  text-decoration: none;
+}
+
+.ministry-link img {
+  width: 150px;
+  height: auto;
+  margin-right: 10px;
+  border-radius: 10px;
+}
+
+/* Ensure the footer stays at the bottom */
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+footer {
+  margin-top: auto;
+}

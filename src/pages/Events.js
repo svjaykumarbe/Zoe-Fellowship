@@ -8,8 +8,8 @@ const Events = () => {
 
   // Sample list of upcoming events
   const upcomingEvents = [
-    { date: 'October 15, 2024', title: 'Community Outreach Event', time: '12:00 PM' },
-    { date: 'November 1, 2024', title: 'Youth Group Retreat', time: '10:00 AM' },
+    { date: 'November 2, 2024', title: 'Zoe Fellowship Prayer Meeting', time: '6:00 PM' },
+    { date: 'November 10, 2024', title: 'Youth Group Retreat', time: '10:00 AM' },
     { date: 'November 20, 2024', title: 'Thanksgiving Service', time: '5:00 PM' },
     { date: 'December 5, 2024', title: 'Christmas Choir Rehearsal', time: '6:00 PM' },
     { date: 'December 24, 2024', title: 'Christmas Eve Service', time: '7:00 PM' },

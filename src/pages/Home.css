@@ -97,4 +97,83 @@
     color: #555;
     line-height: 1.6;
   }
-  
+  /* Home page styles */
+.home-page {
+  background-color: blue; /* Blue background for the home page */
+  color: white; /* Ensure text is white for contrast */
+  padding: 20px;
+  min-height: 100vh; /* Ensure the home page covers full screen height */
+}
+
+.header {
+  text-align: center; /* Center the header text */
+  font-size: 2.5rem; /* Increase font size */
+  padding: 20px;
+}
+
+.mission {
+  margin-top: 40px;
+}
+
+.mission h2 {
+  font-size: 1.8rem;
+}
+
+.mission ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.mission li {
+  margin: 10px 0;
+  font-size: 1.2rem;
+}
+
+.ministries {
+  margin-top: 40px;
+}
+
+.ministries h2 {
+  font-size: 1.8rem;
+}
+
+.ministry-links {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.ministry-link {
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  background-color: #007bff;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.ministry-link:hover {
+  background-color: #0056b3; /* Change link color on hover */
+}
+/* Home Page Styling */
+.home-page {
+  background-color: white;  /* Set the background color to white */
+  color: blue;              /* Set the font color to blue */
+  padding: 20px;
+  min-height: 80vh;         /* Ensure content fills the page so footer stays at the bottom */
+}
+
+.home-page h1 {
+  font-size: 2.5rem;        /* Make the header large */
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.home-page p {
+  font-size: 1.2rem;        /* Increase font size for paragraphs */
+  line-height: 1.6;
+}
+
+.home-page a {
+  color: darkblue;          /* Set link color to dark blue */
+}

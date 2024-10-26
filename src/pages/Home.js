@@ -7,9 +7,9 @@ const Home = () => {
       <section className="hero-section">
         <img src="./churchPic.jpg" alt="Church" className="hero-image" />
         <div className="hero-text">
-          <h1>Welcome to Our Church</h1>
+          <h1>Zoe International Ministries</h1>
           <p style={{ color: '#f5f5f5' }}>
-          Join us in celebrating faith, community, and worship. Our doors are always open to everyone.
+          Connecting people with God, we inspire hearts to experience His presence and become His dwelling place.
           </p>
         </div>
       </section>
@@ -17,24 +17,27 @@ const Home = () => {
       <section className="about-section">
         <h2>About Us</h2>
         <p>
-          Our church has been a beacon of hope and love in the community for over 2 years. Founded
-          in 2023, we have grown from a small congregation to a thriving community of believers
-          dedicated to spreading God's word and love.
+        "We glorify God by sharing His love, fostering relationships, and empowering faith through worship, service, and teaching, creating a vibrant Fellowship of transformed lives."
         </p>
       </section>
 
       <section className="mission-section">
-        <h2>Our Mission</h2>
-        <p>
-          We are committed to serving God and our community through prayer, worship, and service.
-          Our mission is to bring people together, provide a space for spiritual growth, and make a
-          positive impact in the world through Christ's teachings.
-        </p>
-        <div className="mission-images">
-          <img src="./EventsPic.jpg" alt="Church Event" className="mission-image" />
-          <img src="./ct-events.png" alt="Church Worship" className="mission-image" />
-        </div>
-      </section>
+  <h2>Our Mission</h2>
+  <p className="mission-text">
+    <strong>Revive:</strong> To revive the spiritual life of the people who connect so that they go and carry the mission.
+  </p>
+  <p className="mission-text">
+    <strong>Renew:</strong> Renew of mind, spirit, and body, transformed lives.
+  </p>
+  <p className="mission-text">
+    <strong>Refine:</strong> As silver is refined, so will they be refined with the word of God.
+  </p>
+  <div className="mission-images">
+    <img src="./EventsPic.jpg" alt="Church Event" className="mission-image" />
+    <img src="./ct-events.png" alt="Church Worship" className="mission-image" />
+  </div>
+</section>
+
 
       <section className="history-section">
         <h2>Our History</h2>

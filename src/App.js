@@ -9,6 +9,7 @@ import Contact from './pages/Contact';
 import Footer from './components/Footer';
 import Donation from './pages/Donation';
 import Support from './pages/Support'; // Import Support page
+import Volunteer from './pages/Volunteer'; // Import Volunteer page
 import './index.css';
 import './App.css';
 import './style.css';
@@ -30,6 +31,7 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/support" element={<Support />} /> {/* Updated for React Router v6 */}
           <Route path="/donation" element={<Donation />} /> {/* Updated for React Router v6 */}
+          <Route path="/volunteer" element={<Volunteer/>}/>
         </Routes>
       </div>
       </div>

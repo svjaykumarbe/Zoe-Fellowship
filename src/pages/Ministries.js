@@ -8,13 +8,13 @@ const Ministries = () => {
 
   const ministries = [
     {
-      name: 'Youth Ministry',
+      name: 'Zoe Fellowship Ministry',
       description:
-        'Our Youth Ministry is focused on engaging the next generation with the teachings of Christ. Through weekly youth services, mentorship, and community outreach programs, we guide our youth towards a strong spiritual foundation.',
-      image: './Youth.jpg',
+        'Our Children’s Ministry provides a fun, interactive environment where kids can learn about the love of Jesus. Through Sunday school, vacation Bible school, and other activities, we help build a strong foundation of faith for the youngest members of our congregation.',
+      image: './EventsPic.jpg',
     },
     {
-      name: 'Womens Ministry',
+      name: 'Zoe - Daughters of the King',
       description:
         'The Worship Ministry leads our congregation in heartfelt worship through music and song. We aim to create an atmosphere of praise where the presence of God is welcomed, and the hearts of the people are lifted.',
       image: '/WomensMinistry.jpg',
@@ -25,12 +25,7 @@ const Ministries = () => {
         'The Outreach Ministry is dedicated to serving the community by providing food drives, clothing donations, and assisting those in need. Our goal is to share God’s love by helping others in practical and meaningful ways.',
       image: '/Outreach.jpg',
     },
-    {
-      name: 'Children’s Ministry',
-      description:
-        'Our Children’s Ministry provides a fun, interactive environment where kids can learn about the love of Jesus. Through Sunday school, vacation Bible school, and other activities, we help build a strong foundation of faith for the youngest members of our congregation.',
-      image: './Kids.jpg',
-    },
+    
   ];
 
   const handleShow = (ministry) => {
