@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom'; // Import Link from React Router
+import JoinUs from '../components/JoinUs'; 
 
 const Support = () => {
   console.log("Support component rendered"); // Debug log
@@ -16,6 +17,8 @@ const Support = () => {
           <Link to="/volunteer">Volunteer Your Time</Link> {/* Use Link for routing */}
         </li>
       </ul>
+      {/* Add JoinUs module here */}
+      <JoinUs />
     </div>
   );
 }

@@ -8,7 +8,7 @@ const Ministries = () => {
 
   const ministries = [
     {
-      name: 'Zoe Fellowship Ministry',
+      name: 'Zoe - Fellowship Ministry',
       description:
         'Our Children’s Ministry provides a fun, interactive environment where kids can learn about the love of Jesus. Through Sunday school, vacation Bible school, and other activities, we help build a strong foundation of faith for the youngest members of our congregation.',
       image: './EventsPic.jpg',
@@ -20,7 +20,7 @@ const Ministries = () => {
       image: '/WomensMinistry.jpg',
     },
     {
-      name: 'Outreach Ministry',
+      name: 'Zoe - Outreach Ministry',
       description:
         'The Outreach Ministry is dedicated to serving the community by providing food drives, clothing donations, and assisting those in need. Our goal is to share God’s love by helping others in practical and meaningful ways.',
       image: '/Outreach.jpg',
