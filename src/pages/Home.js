@@ -1,5 +1,6 @@
 import React from 'react';
 import './Home.css'; // Import your CSS styles
+import TodaysPromise from '../components/TodaysPromise';
 
 const Home = () => {
   return (
@@ -53,6 +54,7 @@ const Home = () => {
           fellowship.
         </p>
       </section>
+      <TodaysPromise />
     </div>
   );
 };
