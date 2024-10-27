@@ -6,6 +6,7 @@ const Support = () => {
   console.log("Support component rendered"); // Debug log
 
   return (
+    <div>
     <div className="support-page">
       <h1>Support Our Church</h1>
       <p>Our church relies on the support of its congregation. Here are some ways you can help:</p>
@@ -17,8 +18,9 @@ const Support = () => {
           <Link to="/volunteer">Volunteer Your Time</Link> {/* Use Link for routing */}
         </li>
       </ul>
-      {/* Add JoinUs module here */}
-      <JoinUs />
+    </div>
+    {/* Add JoinUs module here */}
+    <JoinUs />
     </div>
   );
 }

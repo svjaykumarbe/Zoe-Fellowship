@@ -177,3 +177,75 @@
 .home-page a {
   color: darkblue;          /* Set link color to dark blue */
 }
+/* Home.css */
+.home-container {
+  padding: 20px;
+  text-align: center;
+}
+
+.prayer-request-section {
+  margin-top: 20px;
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+.scrollable-requests {
+  max-height: 150px; /* Adjust height as needed */
+  overflow-y: auto;
+  border-top: 1px solid #ddd;
+  padding-top: 10px;
+  margin-top: 10px;
+}
+
+.scrollable-requests p {
+  margin: 5px 0;
+}
+
+.scrollable-requests button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.scrollable-requests button:hover {
+  background-color: #45a049;
+}
+
+.prayer-request-form {
+  margin-top: 20px;
+  text-align: left;
+}
+
+.prayer-request-form label {
+  display: block;
+  margin-top: 10px;
+}
+
+.prayer-request-form input,
+.prayer-request-form textarea {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+}
+
+.prayer-request-form button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.prayer-request-form button:hover {
+  background-color: #45a049;
+}

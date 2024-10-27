@@ -1,10 +1,11 @@
+// src/pages/Events.js
 import React, { useState } from 'react';
-import Calendar from 'react-calendar'; // Import Calendar component
-import 'react-calendar/dist/Calendar.css'; // Import calendar styles
-import './Event.css'; // Import custom styles for Events page
+import Calendar from 'react-calendar';
+import 'react-calendar/dist/Calendar.css';
+import './Event.css';
 
 const Events = () => {
-  const [date, setDate] = useState(new Date()); // State to store the selected date
+  const [date, setDate] = useState(new Date());
 
   // Sample list of upcoming events
   const upcomingEvents = [
@@ -17,32 +18,50 @@ const Events = () => {
   ];
 
   return (
+    <div> <h1>Events</h1>
     <div className="events-container">
-      <h1>Events</h1>
+      {/* Main flex container */}
+      <div className="events-content">
+        
+        {/* Left Column: Calendar and Video */}
+        <div className="left-column">
+          <div className="calendar-section">
+            <h2>Select a Date</h2>
+            <Calendar onChange={setDate} value={date} />
+            <p className="selected-date">Selected Date: {date.toDateString()}</p>
+          </div>
 
-      {/* Calendar Section */}
-      <div className="calendar-section">
-        <h2>Select a Date</h2>
-        <Calendar
-          onChange={setDate}
-          value={date}
-        />
-        <p className="selected-date">Selected Date: {date.toDateString()}</p>
-      </div>
-
-      {/* Upcoming Events Section with vertical scrolling */}
-      <div className="upcoming-events">
-        <h2>Upcoming Events</h2>
-        <div className="events-list">
-          {upcomingEvents.map((event, index) => (
-            <div key={index} className="event-item">
-              <h3>{event.title}</h3>
-              <p>{event.date}</p>
-              <p>{event.time}</p>
-            </div>
-          ))}
+          <div className="events-video">
+            <h2>Watch Our Past Events</h2>
+            
+            {/* Embedded YouTube Video */}
+            <iframe 
+              width="100%" 
+              height="315" 
+              src="https://www.youtube.com/embed/dsyUPCXBy-g"
+              title="YouTube video player" 
+              frameBorder="0" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+              allowFullScreen
+            ></iframe>
+          </div>
+        </div>
+        
+        {/* Right Column: Upcoming Events */}
+        <div className="right-column">
+          <h2>Upcoming Events</h2>
+          <div className="events-list">
+            {upcomingEvents.map((event, index) => (
+              <div key={index} className="event-item">
+                <h3>{event.title}</h3>
+                <p>{event.date}</p>
+                <p>{event.time}</p>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
+    </div>
     </div>
   );
 };
