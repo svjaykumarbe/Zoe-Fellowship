@@ -1,12 +1,9 @@
-# Docs for the Azure Web Apps Deploy action: https://github.com/Azure/webapps-deploy
-# More GitHub Actions for Azure: https://github.com/Azure/actions
-
-name: Build and deploy Node.js app to Azure Web App - Zoefellowship
+name: Build and deploy Node.js app to Azure Web App - Zoe-InternationalMinistry
 
 on:
   push:
     branches:
-      - main
+      - Local-Branch
   workflow_dispatch:
 
 jobs:
@@ -19,13 +16,13 @@ jobs:
       - name: Set up Node.js version
         uses: actions/setup-node@v3
         with:
-          node-version: '18.x'
+          node-version: '20.x'
 
-      - name: npm install, build, and test
+      # Run npm install and build your React app
+      - name: Build
         run: |
           npm install
-          npm run build --if-present
-          npm run test --if-present
+          npm run build
       
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v4
@@ -40,7 +37,7 @@ jobs:
       name: 'Production'
       url: ${{ steps.deploy-to-webapp.outputs.webapp-url }}
     permissions:
-      id-token: write #This is required for requesting the JWT
+      id-token: write # This is required for requesting the JWT
 
     steps:
       - name: Download artifact from build job
@@ -51,15 +48,14 @@ jobs:
       - name: Login to Azure
         uses: azure/login@v2
         with:
-          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_5FB2B7F4F087400A9F2775FE388D0030 }}
-          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_64C8E8E084784D4DBB0469004ACDDBAF }}
-          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_58F8E982D65D412DA762289A3D055C05 }}
+          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_A845D00F27C24BCDAC62659D4EB98B60 }}
+          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_89A968F04B31468690B75DA74C50917F }}
+          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_F26915ADB2F04EC6BEA432A78B6E261E }}
 
       - name: 'Deploy to Azure Web App'
         uses: azure/webapps-deploy@v3
         id: deploy-to-webapp
         with:
-          app-name: 'Zoefellowship'
+          app-name: 'Zoe-InternationalMinistry'
           slot-name: 'Production'
           package: .
-          
