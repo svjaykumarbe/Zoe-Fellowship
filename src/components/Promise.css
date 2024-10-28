@@ -1,0 +1,22 @@
+/* src/components/Promise.css */
+
+.promise-container {
+    background-color: #f1f9ff; /* Light blue background */
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .promise-container h2 {
+    font-size: 1.5rem;
+    color: #007bff; /* Primary color */
+    margin-bottom: 10px;
+  }
+  
+  .promise-container p {
+    font-size: 1.2rem;
+    color: #333;
+    font-style: italic;
+  }  

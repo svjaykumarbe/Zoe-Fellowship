@@ -5,15 +5,15 @@ const pastors = [
   {
     name: 'Pastor Daniel Shetty',
     role: 'Senior Pastor',
-    email: 'daniel@zoeinternationalministry.com',
+    email: 'daniel@zoeim.com',
     phone: '+1 (647) 888-3776',
     bio: 'Pastor Daniel Shetty has been leading our church for over 10 years with a focus on community, spiritual growth, and service to others.',
     image: './Daniel.jpg', // Replace with actual image path
   },
   {
     name: 'Sunitha Daniel',
-    role: 'Associate Pastor',
-    email: 'sunitha@zoeinternationalministry.com',
+    role: 'Associate Director',
+    email: 'sunitha@zoeim.com',
     phone: '+1 (416) 662-9270',
     bio: 'Sunitha Daniel is passionate about worship, teaching, and helping others grow in their faith journey.',
     image: './Sunitha.jpg', // Replace with actual image path
