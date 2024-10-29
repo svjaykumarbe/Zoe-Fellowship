@@ -30,7 +30,7 @@ const Home = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
-    }, 2000); // 10000 ms = 10 seconds
+    }, 3000); // 10000 ms = 10 seconds
 
     return () => clearInterval(interval); // Cleanup on unmount
   }, [images.length]);
