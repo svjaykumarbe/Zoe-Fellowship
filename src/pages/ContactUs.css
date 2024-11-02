@@ -62,3 +62,30 @@
     margin-top: 10px;
     color: #555;
   }  
+  .social-links {
+    margin-top: 10px;
+  }
+  
+  .social-links a {
+    margin-right: 10px;
+    color: #3b5998; /* Facebook blue as default, adjust per platform */
+    text-decoration: none;
+  }
+  
+  .social-links a:hover {
+    color: #4c66a4;
+  }  
+  .social-links {
+    margin-top: 10px;
+    display: flex;
+    gap: 10px;
+  }
+  
+  .social-links a {
+    color: #3b5998; /* Base color, customize for different platforms */
+    text-decoration: none;
+  }
+  
+  .social-links a:hover {
+    color: #4c66a4;
+  }  
