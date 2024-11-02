@@ -54,9 +54,10 @@ jobs:
       # Clean up any old deployment files
       - name: Clean up old deployment files
         run: |
-          if [ -d "C:/local/Temp/zipdeploy" ]; then 
-            rm -rf C:/local/Temp/zipdeploy/*
-          fi
+          if (Test-Path -Path "C:\local\Temp\zipdeploy") { 
+            Remove-Item -Path "C:\local\Temp\zipdeploy\*" -Recurse -Force 
+          }
+        shell: pwsh
 
       - name: Login to Azure
         uses: azure/login@v2  # Use the latest version of azure/login
