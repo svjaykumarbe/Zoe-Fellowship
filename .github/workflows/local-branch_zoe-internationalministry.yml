@@ -41,6 +41,14 @@ jobs:
         with:
           name: node-app
       
+      - name: Clean up old deployment files
+        # Use PowerShell to remove old files from temp directory
+        run: |
+          if (Test-Path -Path "C:\local\Temp\zipdeploy") { 
+            Remove-Item -Path "C:\local\Temp\zipdeploy\*" -Recurse -Force 
+          }
+        shell: pwsh
+
       - name: Login to Azure
         uses: azure/login@v1
         with:
