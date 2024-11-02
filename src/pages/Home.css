@@ -41,7 +41,7 @@
   
   .about-section h2 {
     font-size: 2rem;
-    color: #0d6efd;
+    color: #555;
     margin-bottom: 20px;
   }
   
@@ -58,7 +58,7 @@
   
   .mission-section h2 {
     font-size: 2rem;
-    color: #0d6efd;
+    color: #555;
     margin-bottom: 20px;
   }
   
@@ -88,7 +88,7 @@
   
   .history-section h2 {
     font-size: 2rem;
-    color: #0d6efd;
+    color: #555;
     margin-bottom: 20px;
   }
   
@@ -99,7 +99,7 @@
   }
   /* Home page styles */
 .home-page {
-  background-color: blue; /* Blue background for the home page */
+  background-color: #555; /* Blue background for the home page */
   color: white; /* Ensure text is white for contrast */
   padding: 20px;
   min-height: 100vh; /* Ensure the home page covers full screen height */
@@ -158,7 +158,7 @@
 /* Home Page Styling */
 .home-page {
   background-color: white;  /* Set the background color to white */
-  color: blue;              /* Set the font color to blue */
+  color: #555;              /* Set the font color to blue */
   padding: 20px;
   min-height: 80vh;         /* Ensure content fills the page so footer stays at the bottom */
 }
