@@ -32,7 +32,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: node-app
-          path: ./build  # Specify build directory here if it exists
+          path: ./build  # Ensure this is where your build output goes
 
   deploy:
     runs-on: ubuntu-latest
@@ -44,9 +44,9 @@ jobs:
         uses: actions/download-artifact@v4
         with:
           name: node-app
+          path: ./build  # Match the path with the build artifact location
       
       - name: Clean up old deployment files
-        # Use PowerShell to remove old files from temp directory
         run: |
           if (Test-Path -Path "C:\local\Temp\zipdeploy") { 
             Remove-Item -Path "C:\local\Temp\zipdeploy\*" -Recurse -Force 
@@ -64,4 +64,4 @@ jobs:
         uses: azure/webapps-deploy@v2
         with:
           app-name: 'Zoe-InternationalMinistry'
-          package: './node-app'  # Path to downloaded artifact directory
+          package: './build'  # Path to downloaded artifact directory
