@@ -18,21 +18,26 @@ jobs:
       - uses: actions/checkout@v4
 
       - name: Set up Node.js version
-        uses: actions/setup-node@v4  # Updated to the latest version
+        uses: actions/setup-node@v4  # Use the latest version of setup-node
         with:
-          node-version: '20.x'
+          node-version: '20.x'  # Specify the Node.js version
 
-      # Run npm install and build your React app
+      # Install dependencies and build the application
       - name: Build
         run: |
           npm install
           npm run build
-      
+
+      # Log the contents of the build directory
+      - name: List build directory contents
+        run: |
+          dir ./build  # Use 'ls -R' for Linux runners
+
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v4
         with:
           name: node-app
-          path: ./build  # Ensure this is where your build output goes
+          path: ./build  # Specify the build directory
 
   deploy:
     runs-on: ubuntu-latest
@@ -44,17 +49,17 @@ jobs:
         uses: actions/download-artifact@v4
         with:
           name: node-app
-          path: ./build  # Match the path with the build artifact location
-      
+          path: ./build  # Ensure this matches the upload path
+
+      # Clean up any old deployment files
       - name: Clean up old deployment files
         run: |
-          if (Test-Path -Path "C:\local\Temp\zipdeploy") { 
-            Remove-Item -Path "C:\local\Temp\zipdeploy\*" -Recurse -Force 
-          }
-        shell: pwsh
+          if [ -d "C:/local/Temp/zipdeploy" ]; then 
+            rm -rf C:/local/Temp/zipdeploy/*
+          fi
 
       - name: Login to Azure
-        uses: azure/login@v2  # Updated to the latest version
+        uses: azure/login@v2  # Use the latest version of azure/login
         with:
           client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_18DB32D89F9E4A249585AEE80C061F1F }}
           tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_25301658A919431A83F884AA643AAF07 }}
@@ -64,4 +69,4 @@ jobs:
         uses: azure/webapps-deploy@v2
         with:
           app-name: 'Zoe-InternationalMinistry'
-          package: './build'  # Path to downloaded artifact directory
+          package: './build'  # Path to the downloaded artifact directory
