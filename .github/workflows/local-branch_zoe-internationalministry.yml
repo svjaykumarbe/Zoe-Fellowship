@@ -52,4 +52,4 @@ jobs:
         uses: azure/webapps-deploy@v2
         with:
           app-name: 'Zoe-InternationalMinistry'
-          package: ./build  # Path to artifact directory
+          package: './node-app'  # Path to downloaded artifact directory
