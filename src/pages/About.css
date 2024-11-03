@@ -1,0 +1,15 @@
+.about-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 1rem;
+  }
+  
+  .about-content {
+    max-width: 800px; /* Adjust as needed */
+  }
+  
+  .back-button-container {
+    align-self: flex-start; /* Aligns the back button to the top */
+    margin-left: auto; /* Moves the button to the far right */
+  }  

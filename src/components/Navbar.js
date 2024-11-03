@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import BackButton from '../pages/BackButton';
 import './Navbar.css';
 
 const Navbar = () => {
@@ -9,6 +10,7 @@ const Navbar = () => {
     <nav className="navbar navbar-expand-lg navbar-light bg-light">
       <div className="container">
         <Link className="navbar-brand" to="/">Zoe Fellowship</Link>
+        
         <button 
           className="navbar-toggler" 
           type="button" 
@@ -19,6 +21,7 @@ const Navbar = () => {
         >
           <span className="navbar-toggler-icon"></span>
         </button>
+        
         <div className={`collapse navbar-collapse ${isOpen ? 'show' : ''}`} id="navbarNav">
           <ul className="navbar-nav ml-auto">
             <li className="nav-item">
@@ -40,6 +43,11 @@ const Navbar = () => {
               <Link className="nav-link" to="/support" onClick={() => setIsOpen(false)}>Support</Link>
             </li>
           </ul>
+          
+          {/* Back Button at the end of the navbar links */}
+          <div className="back-button-container ml-auto">
+            <BackButton />
+          </div>
         </div>
       </div>
     </nav>

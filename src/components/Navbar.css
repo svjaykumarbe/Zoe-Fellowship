@@ -112,5 +112,24 @@
     display: block;
   }
 }
+.back-button-container {
+  display: flex;
+  align-items: center;
+  margin-left: auto; /* Align back button to the right */
+}
+
+.back-button {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  color: #007bff;
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.back-button:hover {
+  color: #0056b3;
+}
 
   

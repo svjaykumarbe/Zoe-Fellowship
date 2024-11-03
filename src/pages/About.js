@@ -14,17 +14,17 @@ const About = () => {
         Today, we continue the legacy of our founders by expanding our outreach efforts, both locally and globally, and by maintaining our commitment to being a place of worship, service, and fellowship for all people.
       </p>
       <section>
-      <h2>Our Mission</h2>
-      <p className="mission-text">
-      <strong>Revive:</strong> To revive the spiritual life of the people who connect so that they go and carry the mission.
-    </p>
-    <p className="mission-text">
-    <strong>Renew:</strong> Renew of mind, spirit, and body, transformed lives.
-    </p>
-    <p className="mission-text">
-    <strong>Refine:</strong> As silver is refined, so will they be refined with the word of God.
-    </p>
-  </section>
+        <h2>Our Mission</h2>
+        <p className="mission-text">
+          <strong>Revive:</strong> To revive the spiritual life of the people who connect so that they go and carry the mission.
+        </p>
+        <p className="mission-text">
+          <strong>Renew:</strong> Renew of mind, spirit, and body, transformed lives.
+        </p>
+        <p className="mission-text">
+          <strong>Refine:</strong> As silver is refined, so will they be refined with the word of God.
+        </p>
+      </section>
       <h2>Our Values</h2>
       <ul>
         <li><strong>Faith:</strong> We believe in the transformative power of faith in Jesus Christ.</li>
