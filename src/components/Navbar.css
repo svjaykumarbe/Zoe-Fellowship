@@ -82,5 +82,35 @@
 .nav-links li a.active {
   color: #f1c40f; /* Highlight active link */
 }
+/* Hide horizontal menu on smaller screens */
+@media (max-width: 768px) {
+  .horizontal-menu {
+    display: none;
+  }
+}
+
+/* Show mobile menu (e.g., a hamburger icon) on smaller screens */
+@media (max-width: 768px) {
+  .mobile-menu {
+    display: block;
+  }
+}
+.menu {
+  display: flex;
+}
+
+/* Hide menu and display hamburger on mobile */
+@media (max-width: 768px) {
+  .menu {
+    display: none;
+    flex-direction: column;
+  }
+  .menu.open {
+    display: block;
+  }
+  .hamburger {
+    display: block;
+  }
+}
 
   

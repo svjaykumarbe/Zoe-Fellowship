@@ -1,31 +1,43 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './Navbar.css';
 
 const Navbar = () => {
+  const [isOpen, setIsOpen] = useState(false); // State to toggle mobile menu
+
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light">
       <div className="container">
         <Link className="navbar-brand" to="/">Zoe Fellowship</Link>
-        <div className="collapse navbar-collapse">
+        <button 
+          className="navbar-toggler" 
+          type="button" 
+          onClick={() => setIsOpen(!isOpen)} // Toggle menu on click
+          aria-controls="navbarNav" 
+          aria-expanded={isOpen ? "true" : "false"} 
+          aria-label="Toggle navigation"
+        >
+          <span className="navbar-toggler-icon"></span>
+        </button>
+        <div className={`collapse navbar-collapse ${isOpen ? 'show' : ''}`} id="navbarNav">
           <ul className="navbar-nav ml-auto">
             <li className="nav-item">
-              <Link className="nav-link" to="/">Home</Link>
+              <Link className="nav-link" to="/" onClick={() => setIsOpen(false)}>Home</Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/about">About Us</Link>
+              <Link className="nav-link" to="/about" onClick={() => setIsOpen(false)}>About Us</Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/ministries">Ministries</Link>
+              <Link className="nav-link" to="/ministries" onClick={() => setIsOpen(false)}>Ministries</Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/events">Events</Link>
+              <Link className="nav-link" to="/events" onClick={() => setIsOpen(false)}>Events</Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/contact">Contact Us</Link>
+              <Link className="nav-link" to="/contact" onClick={() => setIsOpen(false)}>Contact Us</Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/support">Support</Link>
+              <Link className="nav-link" to="/support" onClick={() => setIsOpen(false)}>Support</Link>
             </li>
           </ul>
         </div>
