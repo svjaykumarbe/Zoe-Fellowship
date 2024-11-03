@@ -82,5 +82,54 @@
 .nav-links li a.active {
   color: #f1c40f; /* Highlight active link */
 }
+/* Hide horizontal menu on smaller screens */
+@media (max-width: 768px) {
+  .horizontal-menu {
+    display: none;
+  }
+}
+
+/* Show mobile menu (e.g., a hamburger icon) on smaller screens */
+@media (max-width: 768px) {
+  .mobile-menu {
+    display: block;
+  }
+}
+.menu {
+  display: flex;
+}
+
+/* Hide menu and display hamburger on mobile */
+@media (max-width: 768px) {
+  .menu {
+    display: none;
+    flex-direction: column;
+  }
+  .menu.open {
+    display: block;
+  }
+  .hamburger {
+    display: block;
+  }
+}
+.back-button-container {
+  display: flex;
+  align-items: center;
+  margin-left: auto; /* Align back button to the right */
+}
+
+.back-button {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  color: #007bff;
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.back-button:hover {
+  color: #0056b3;
+}
 
   

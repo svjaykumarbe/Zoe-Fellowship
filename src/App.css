@@ -246,3 +246,18 @@ body {
 footer {
   margin-top: auto;
 }
+.about-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 1rem;
+}
+
+.back-button-container {
+  align-self: flex-start; /* Aligns the back button to the top */
+  margin-left: auto; /* Moves the button to the far right */
+}
+
+.about-content {
+  max-width: 800px; /* Adjust as needed */
+}
