@@ -4,12 +4,15 @@ import Navbar from './components/Navbar';
 import Home from './pages/Home';
 import About from './pages/About';
 import Ministries from './pages/Ministries';
-import Events from './pages/Events';
+import Events from './pages/Events_Prayer';
 import Contact from './pages/Contact';
 import Footer from './components/Footer';
 import Donation from './pages/Donation';
 import Support from './pages/Support'; // Import Support page
 import Volunteer from './pages/Volunteer'; // Import Volunteer page
+import LearnMore from './pages/LearnMore'; 
+//import DisciplePage from './pages/DisciplePage'; // Rename this import to DisciplePage
+
 import './index.css';
 import './App.css';
 import './style.css';
@@ -32,6 +35,7 @@ function App() {
           <Route path="/support" element={<Support />} /> {/* Updated for React Router v6 */}
           <Route path="/donation" element={<Donation />} /> {/* Updated for React Router v6 */}
           <Route path="/volunteer" element={<Volunteer/>}/>
+          <Route path="/learnmore" element={<LearnMore />} />
         </Routes>
       </div>
       </div>
