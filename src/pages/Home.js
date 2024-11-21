@@ -2,10 +2,8 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import CountdownTimer from './CountdownTimer';
 import './Home.css';
-import churchOutreachImage from './Images/OutreachGames.jpg';
 import sundayServiceImage from './Images/SundayService.jpg';
 import communityprayerImage from './Images/ct-events.png';
-import bibleImage from './Images/BibleStudy.png';
 
 
 
@@ -31,15 +29,6 @@ const Home = () => {
           <Link to="/about" className="btn btn-secondary">About Our Church</Link>
         </div>
       </section>
-      <div>
-      <h1>Welcome to Zoe International Ministries</h1>
-      <p>Explore our core discipleship values.</p>
-      
-      {/* Button to Navigate to DisciplePage */}
-      <Link to="/disciple" className="btn btn-primary">
-        Learn About The Whole Disciple
-      </Link>
-    </div>
       {/* On-Going Events Section */}
       <section className="upcoming-events">
   <div className="container">
