@@ -3,7 +3,7 @@ name: Build and deploy Node.js app to Azure Web App - Zoe-InternationalMinistry
 on:
   push:
     branches:
-      - main
+      - Local-Branch
   workflow_dispatch:
 
 permissions:
@@ -60,10 +60,10 @@ jobs:
         shell: pwsh
 
       - name: Login to Azure
-        uses: azure/login@v2  # Use the latest version of azure/login
+        uses: azure/login@v2  # Use the latest version of azure/login 
         with:
-          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_18DB32D89F9E4A249585AEE80C061F1F }}
-          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_25301658A919431A83F884AA643AAF07 }}
+          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_CE35BE3EC47644E9B6FE95EC970F7383 }}
+          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_BAB62490CDE14A769BFD77A35637242F }}
           subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_B0A02669A55E407BA3F79609915A2CAF }}
 
       - name: 'Deploy to Azure Web App'

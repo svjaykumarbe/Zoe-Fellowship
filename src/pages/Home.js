@@ -29,8 +29,8 @@ const Home = () => {
           <Link to="/about" className="btn btn-secondary">About Our Church</Link>
         </div>
       </section>
-      {/* On-Going Events Section */}
-      <section className="upcoming-events">
+  {/* On-Going Events Section */}
+  <section className="upcoming-events">
   <div className="container">
     <h2 className="section-title">On-Going Events</h2>
     <div className="grid-container">
@@ -67,8 +67,8 @@ const Home = () => {
           className="event-image" 
         />
       </div>
-    </div>
-  </div>
+     </div>
+     </div>
       </section>
 
 
