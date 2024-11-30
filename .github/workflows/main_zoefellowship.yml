@@ -66,8 +66,16 @@ jobs:
           tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_BAB62490CDE14A769BFD77A35637242F }}
           subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_B0A02669A55E407BA3F79609915A2CAF }}
           auth-type: SERVICE_PRINCIPAL
-          allow-no-subscriptions: true
+          allow-no-subscriptions: true  # Added this option to bypass subscription requirement
 
+      # Debug subscription details to verify access
+      - name: List Azure Subscriptions
+        run: az account list --output table
+
+      - name: Set Azure Cloud
+        run: az cloud set -n AzureCloud
+
+      # Deploy to Azure Web App
       - name: 'Deploy to Azure Web App'
         uses: azure/webapps-deploy@v2
         with:
