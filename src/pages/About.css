@@ -13,3 +13,9 @@
     align-self: flex-start; /* Aligns the back button to the top */
     margin-left: auto; /* Moves the button to the far right */
   }  
+  .about-container {
+    background-color: #f9f9f9; /* Light background color */
+    padding: 20px;
+    border-radius: 8px; /* Optional: adds rounded corners for a modern look */
+  }
+  

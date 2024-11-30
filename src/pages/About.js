@@ -2,7 +2,7 @@ import React from 'react';
 
 const About = () => {
   return (
-    <div className="container">
+    <div className="container" style={{ backgroundColor: 'lightSkyBlue', padding: '20px', borderRadius: '8px' }}>
       <h1>Our Church's History</h1>
       <p>
         Founded in 2023, our church has served as a beacon of faith and community for over a century. From humble beginnings in a small wooden chapel, our congregation has grown to become one of the most vibrant and welcoming communities in the region.
