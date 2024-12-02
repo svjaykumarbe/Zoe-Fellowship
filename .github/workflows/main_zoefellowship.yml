@@ -65,7 +65,7 @@ jobs:
           client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID }}
           tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID }}
           subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID }}
-          auth-type: "OIDC"
+          auth-type: "SERVICE_PRINCIPAL"  # Use 'SERVICE_PRINCIPAL' for federated login
           allow-no-subscriptions: true
 
       # Debug subscription details to verify access
