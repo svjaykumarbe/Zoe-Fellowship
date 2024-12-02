@@ -71,7 +71,6 @@ jobs:
           tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID }}
           subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID }}
           auth-type: "SERVICE_PRINCIPAL"  # Ensure 'SERVICE_PRINCIPAL' is used for login
-          allow-no-subscriptions: true
 
       # Debug subscription details to verify access
       - name: List Azure Subscriptions
