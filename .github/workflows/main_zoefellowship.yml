@@ -54,10 +54,10 @@ jobs:
       # Clean up any old deployment files
       - name: Clean up old deployment files
         run: |
-          if (Test-Path -Path "C:\local\Temp\zipdeploy") { 
-            Remove-Item -Path "C:\local\Temp\zipdeploy\*" -Recurse -Force 
-          }
-        shell: pwsh
+          if [ -d "/tmp/zipdeploy" ]; then 
+            rm -rf /tmp/zipdeploy/*; 
+          fi
+        shell: bash
 
       - name: Login to Azure
         uses: azure/login@v2  # Use the latest version of azure/login 
@@ -65,8 +65,8 @@ jobs:
           client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID }}
           tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID }}
           subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID }}
-          auth-type: SERVICE_PRINCIPAL
-          allow-no-subscriptions: true  # Added this option to bypass subscription requirement
+          auth-type: 'SERVICE_PRINCIPAL'
+          allow-no-subscriptions: true  # Added to bypass subscription requirement
 
       # Debug subscription details to verify access
       - name: List Azure Subscriptions
@@ -76,7 +76,7 @@ jobs:
         run: az cloud set -n AzureCloud
 
       # Deploy to Azure Web App
-      - name: 'Deploy to Azure Web App'
+      - name: Deploy to Azure Web App
         uses: azure/webapps-deploy@v2
         with:
           app-name: 'Zoe-InternationalMinistry'
