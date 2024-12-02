@@ -1,28 +1,50 @@
 import React from 'react';
-import { Link } from 'react-router-dom'; // Import Link from React Router
+import { Link } from 'react-router-dom';
 import JoinUs from '../components/JoinUs';
+import './Support.css'; // Import CSS for styling
 
 const Support = () => {
-  console.log("Support component rendered"); // Debug log
+  console.log("Support component rendered");
 
   return (
-    <div>
-    <div className="support-page">
-      <h1>Support Our Church</h1>
-      <p>Our church relies on the support of its congregation. Here are some ways you can help:</p>
-      <ul>
-        <li>
-          <Link to="/donation">Make a Donation</Link> {/* Use Link for routing */}
-        </li>
-        <li>
-          <Link to="/volunteer">Volunteer Your Time</Link> {/* Use Link for routing */}
-        </li>
-      </ul>
-    </div>
-    {/* Add JoinUs module here */}
-    <JoinUs />
+    <div className="support-container">
+      <div className="support-header">
+        <h1>Support Our Church</h1>
+        <p className="support-intro">
+          Together, we can make a difference! Your support helps us in serving the community and spreading love.
+        </p>
+      </div>
+
+      <div className="support-options">
+        <h2>Ways to Support</h2>
+        <ul className="support-list">
+          {/* Make a Donation */}
+          <li>
+            <Link to="/donation" className="support-link">
+              <div className="support-card">
+                <h3>Make a Donation</h3>
+                <p>Contribute financially to our mission and community.</p>
+              </div>
+            </Link>
+          </li>
+          {/* Volunteer Your Time */}
+          <li>
+            <Link to="/volunteer" className="support-link">
+              <div className="support-card">
+                <h3>Volunteer Your Time</h3>
+                <p>Be a part of our team by volunteering.</p>
+              </div>
+            </Link>
+          </li>
+        </ul>
+      </div>
+
+      {/* Include JoinUs module */}
+      <div className="support-join">
+        <JoinUs />
+      </div>
     </div>
   );
-}
+};
 
 export default Support;

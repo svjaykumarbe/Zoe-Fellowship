@@ -18,4 +18,116 @@
     padding: 20px;
     border-radius: 8px; /* Optional: adds rounded corners for a modern look */
   }
-  
+/* General Container Styling */
+.about-container {
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(to bottom, #f9f9f9, #ffffff);
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  max-width: 1200px; /* Restrict container width */
+  margin: 30px auto;
+}
+
+/* Header Section */
+.about-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.about-header h1 {
+  font-size: 2.5rem;
+  color: #2c3e50;
+  margin-bottom: 15px;
+}
+
+.about-header p {
+  font-size: 1.2rem;
+  color: #7f8c8d;
+  line-height: 1.8;
+}
+
+/* Content Section (Flexbox Layout) */
+.about-content {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+/* Mission Section */
+.about-mission {
+  flex: 1; /* Takes up equal space */
+  padding: 20px;
+  background: #ecf0f1;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 400px; /* Restrict width */
+}
+
+.about-mission h2 {
+  font-size: 2rem;
+  color: #2980b9;
+  margin-bottom: 20px;
+  text-align: left; /* Align text to the left */
+}
+
+.mission-list p {
+  font-size: 1.1rem;
+  color: #34495e;
+  margin-bottom: 15px;
+  text-align: justify;
+}
+
+.mission-list strong {
+  color: #e74c3c;
+}
+
+/* Values Section */
+.about-values {
+  flex: 1; /* Takes up equal space */
+  padding: 20px;
+  background: #f4f6f6;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 400px; /* Restrict width */
+}
+
+.about-values h2 {
+  font-size: 2rem;
+  color: #27ae60;
+  margin-bottom: 20px;
+  text-align: left; /* Align text to the left */
+}
+
+.about-values ul {
+  list-style: none;
+  padding: 0;
+}
+
+.about-values li {
+  font-size: 1.1rem;
+  color: #34495e;
+  margin-bottom: 15px;
+  background: #ffffff;
+  padding: 10px 15px;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  text-align: justify; /* Justify text alignment */
+}
+
+.about-values strong {
+  color: #2c3e50;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .about-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-mission,
+  .about-values {
+    max-width: 100%; /* Make sections full-width */
+  }
+}

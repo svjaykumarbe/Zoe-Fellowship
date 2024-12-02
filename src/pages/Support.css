@@ -1,0 +1,90 @@
+.support-container {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to bottom, #f9f9f9, #ffffff);
+    padding: 40px 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .support-header {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .support-header h1 {
+    font-size: 2.5rem;
+    color: #2c3e50;
+  }
+  
+  .support-intro {
+    font-size: 1.2rem;
+    color: #7f8c8d;
+    margin-top: 10px;
+  }
+  
+  .support-options h2 {
+    font-size: 2rem;
+    color: #34495e;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .support-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .support-link {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .support-card {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+    width: 250px;
+    border: 3px solid transparent; /* Default transparent border */
+  }
+  
+  /* Border color for "Make a Donation" */
+  .support-card:nth-child(1) {
+    border-color: #2980b9; /* Blue */
+  }
+  
+  /* Border color for "Volunteer Your Time" */
+  .support-card:nth-child(2) {
+    border-color: #27ae60; /* Green */
+  }
+  
+  /* Border color for "Join Us as a Member Online" */
+  .support-card:nth-child(3) {
+    border-color: #8e44ad; /* Purple */
+  }
+  
+  .support-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  .support-card h3 {
+    font-size: 1.5rem;
+    color: #34495e;
+  }
+  
+  .support-card p {
+    font-size: 1rem;
+    color: #7f8c8d;
+  }
+  
+  .support-join {
+    margin-top: 40px;
+    text-align: center;
+  }  
