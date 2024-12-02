@@ -2,8 +2,6 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import CountdownTimer from './CountdownTimer';
 import './Home.css';
-import sundayServiceImage from './Images/SundayService.jpg';
-import communityprayerImage from './Images/ct-events.png';
 
 
 
@@ -29,48 +27,6 @@ const Home = () => {
           <Link to="/about" className="btn btn-secondary">About Our Church</Link>
         </div>
       </section>
-  {/* On-Going Events Section */}
-  <section className="upcoming-events">
-  <div className="container">
-    <h2 className="section-title">On-Going Events</h2>
-    <div className="grid-container">
-      {/* Sunday Worship Service */}
-      <div className="grid-item light-green">
-        <h3>SUNDAY WORSHIP SERVICE</h3>
-        <img 
-          src={sundayServiceImage} 
-          alt="Sunday Service Event" 
-          className="event-image" 
-        />
-        <p>Join us every Sunday for our worship service and fellowship time.</p>
-        <Link to="/events" className="btn btn-outline">View Event</Link>
-      </div>
-
-      {/* Community Prayer Gathering */}
-      <div className="grid-item light-orange">
-        <h3>COMMUNITY PRAYER GATHERING</h3>
-        <img 
-          src={communityprayerImage} 
-          alt="Community Prayer Gathering" 
-          className="event-image" 
-        />
-        <p>Join us on the first Saturday of each month for a community prayer gathering.</p>
-        <p><strong>Date & Time:</strong> First Saturday of every month (10:00 AM - 12:00 PM)</p>
-      </div>
-
-      {/* Church Outreach Event */}
-      <div className="grid-item light-blue">
-        <h3>COMMUNITY PRAYER GATHERING</h3>
-        <img 
-          src={communityprayerImage} 
-          alt="Community Prayer Gathering" 
-          className="event-image" 
-        />
-      </div>
-     </div>
-     </div>
-      </section>
-
 
       {/* Upcoming Events Section */}
       <section className="upcoming-events stylish-section">

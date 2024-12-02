@@ -1,6 +1,7 @@
 // src/pages/Events.js
 import 'react-calendar/dist/Calendar.css';
 import './Event.css';
+import CountdownTimer from './CountdownTimer';
 import communityprayer from './Images/PrayerMeeting.jpg';
 
 const Events = () => {
@@ -8,7 +9,7 @@ const Events = () => {
   // Sample list of upcoming events
 
   return (
-    <div> <h1>SUNDAY WORSHIP SERVICE</h1>
+    <div> <h1>SATURDAY WORSHIP SERVICE</h1>
     <div className="events-container">
       {/* Main flex container */}
       <div className="events-content">
@@ -21,6 +22,9 @@ const Events = () => {
         </div>
       </div>
     </div>
+    <div className="countdown-container">
+        <CountdownTimer targetDate="2024-12-14T18:00:00" />
+      </div>
     </div>
   );
 };
