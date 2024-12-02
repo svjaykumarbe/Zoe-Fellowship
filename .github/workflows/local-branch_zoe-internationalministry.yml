@@ -70,6 +70,7 @@ jobs:
           client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID }}
           tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID }}
           subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID }}
+          client-secret: ${{ secrets.AZUREAPPSERVICE_CLIENTSECRET }}
           auth-type: "SERVICE_PRINCIPAL"  # Ensure 'SERVICE_PRINCIPAL' is used for login
 
       # Debug subscription details to verify access
