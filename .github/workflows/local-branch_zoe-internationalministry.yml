@@ -65,8 +65,6 @@ jobs:
           client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID }}
           tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID }}
           subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID }}
-          auth-type: 'SERVICE_PRINCIPAL'
-          allow-no-subscriptions: false  # Added to bypass subscription requirement
 
       # Debug subscription details to verify access
       - name: List Azure Subscriptions
