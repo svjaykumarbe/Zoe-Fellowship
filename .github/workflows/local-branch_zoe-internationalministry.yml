@@ -59,21 +59,23 @@ jobs:
           fi
         shell: bash
 
+      # Set Azure Cloud
+      - name: Set Azure Cloud
+        run: az cloud set -n AzureCloud  # Ensure AzureCloud is set
+
+      # Login to Azure
       - name: Login to Azure
-        uses: azure/login@v2  # Use the latest version of azure/login 
+        uses: azure/login@v2  # Use the latest version of azure/login
         with:
           client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID }}
           tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID }}
           subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID }}
-          auth-type: "SERVICE_PRINCIPAL"  # Use 'SERVICE_PRINCIPAL' for federated login
+          auth-type: "SERVICE_PRINCIPAL"  # Ensure 'SERVICE_PRINCIPAL' is used for login
           allow-no-subscriptions: true
 
       # Debug subscription details to verify access
       - name: List Azure Subscriptions
         run: az account list --output table
-
-      - name: Set Azure Cloud
-        run: az cloud set -n AzureCloud
 
       # Deploy to Azure Web App
       - name: Deploy to Azure Web App
