@@ -1,91 +1,95 @@
 .contact-us-container {
-    padding: 40px;
-    text-align: center;
-    font-family: Arial, sans-serif;
-  }
-  
-  h2 {
-    font-size: 2.5rem;
-    margin-bottom: 40px;
-    color: #0d6efd;
-  }
-  
-  .pastor-grid {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    gap: 20px;
-  }
-  
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(to bottom, #f9f9f9, #ffffff);
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  max-width: 1200px;
+  margin: 30px auto;
+  text-align: center;
+}
+
+.contact-us-container h2 {
+  font-size: 2.5rem;
+  color: #2c3e50;
+  margin-bottom: 30px;
+}
+
+.pastor-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.pastor-card {
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 500px;
+  margin-bottom: 20px;
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+}
+
+.pastor-card:hover {
+  transform: translateY(-10px);
+}
+
+.image-container {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+}
+
+.pastor-image {
+  width: 100%;
+  height: 200px; /* Adjust height to fit grid structure */
+  object-fit: cover; /* Ensures the image fits without distortion */
+  border-top-left-radius: 12px; /* Match card styling */
+  border-top-right-radius: 12px;
+}
+
+.pastor-info {
+  padding: 20px;
+}
+
+.pastor-info h3 {
+  font-size: 1.8rem;
+  color: #2980b9;
+  margin-bottom: 10px;
+}
+
+.pastor-info .role {
+  font-size: 1.2rem;
+  color: #7f8c8d;
+  margin-bottom: 15px;
+}
+
+.pastor-info p {
+  font-size: 1rem;
+  color: #34495e;
+  margin-bottom: 10px;
+}
+
+.pastor-info .bio {
+  font-size: 1rem;
+  color: #7f8c8d;
+  margin-bottom: 15px;
+}
+
+.pastor-info .social-links a {
+  margin: 0 10px;
+  color: #2980b9;
+  transition: color 0.3s ease-in-out;
+}
+
+.pastor-info .social-links a:hover {
+  color: #e74c3c;
+}
+
+@media (max-width: 768px) {
   .pastor-card {
-    width: 300px;
-    padding: 20px;
-    background-color: #f9f9f9;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: left;
-  }
-  
-  .pastor-image {
     width: 100%;
-    height: auto;
-    border-radius: 8px;
-    margin-bottom: 20px;
   }
-  
-  .pastor-card h3 {
-    font-size: 1.5rem;
-    color: #0d6efd;
-  }
-  
-  .pastor-card .role {
-    font-size: 1rem;
-    font-style: italic;
-    color: #666;
-  }
-  
-  .pastor-card p {
-    font-size: 1rem;
-    color: #333;
-  }
-  
-  .pastor-card a {
-    color: #0d6efd;
-    text-decoration: none;
-  }
-  
-  .pastor-card a:hover {
-    text-decoration: underline;
-  }
-  
-  .bio {
-    margin-top: 10px;
-    color: #555;
-  }  
-  .social-links {
-    margin-top: 10px;
-  }
-  
-  .social-links a {
-    margin-right: 10px;
-    color: #3b5998; /* Facebook blue as default, adjust per platform */
-    text-decoration: none;
-  }
-  
-  .social-links a:hover {
-    color: #4c66a4;
-  }  
-  .social-links {
-    margin-top: 10px;
-    display: flex;
-    gap: 10px;
-  }
-  
-  .social-links a {
-    color: #3b5998; /* Base color, customize for different platforms */
-    text-decoration: none;
-  }
-  
-  .social-links a:hover {
-    color: #4c66a4;
-  }  
+}
