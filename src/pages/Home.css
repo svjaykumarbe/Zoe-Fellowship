@@ -140,7 +140,7 @@ a {
   margin: 40px auto;
   padding: 20px;
   text-align: center;
-  background-color: lightgray;
+  background-color: #007bff;
   border-radius: 10px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }

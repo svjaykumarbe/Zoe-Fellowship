@@ -78,7 +78,7 @@ const Home = () => {
 
       {/* Countdown Timer Section */}
       <section className="countdown-container">
-        <h2>Next Event Starts In</h2>
+        <h1>Zoe International Ministries Online Service</h1>
         <CountdownTimer targetDate="2024-12-14T18:00:00" />
       </section>
     </div>
