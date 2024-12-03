@@ -26,7 +26,7 @@ const Home = () => {
             <p>Sunday Worship Service</p>
           </div>
           <div className="carousel-slide">
-            <img src="./SundayPrayer.jpeg" alt="Community Prayer" />
+            <img src="./Prayerdiverse.jpeg" alt="Community Prayer" />
             <p>Community Prayer Gathering</p>
           </div>
           <div className="carousel-slide">
