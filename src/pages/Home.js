@@ -1,19 +1,42 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import CountdownTimer from './CountdownTimer';
-import './Home.css';  
+import './Home.css';
 
 const Home = () => {
   return (
     <div className="home">
-      {/* Hero Section */}
-      <section className="hero">
+      {/* Hero Section with Parallax Effect */}
+      <section className="hero parallax">
         <div className="hero-content">
-          <h1>Welcome to <span>Zoe International Ministries</span></h1>
+          <h1>Welcome to Zoe International Ministries</h1>
           <p>Building a community of faith, love, and service.</p>
           <Link to="/learnmore" className="btn btn-primary">
             Learn More
           </Link>
+        </div>
+      </section>
+
+      {/* Image Carousel Section */}
+      <section className="carousel-section">
+        <h2>Experience Our Ministry</h2>
+        <div className="carousel">
+          <div className="carousel-slide">
+            <img src="./SundayService.jpg" alt="Church Service" />
+            <p>Sunday Worship Service</p>
+          </div>
+          <div className="carousel-slide">
+            <img src="./SundayPrayer.jpeg" alt="Community Prayer" />
+            <p>Community Prayer Gathering</p>
+          </div>
+          <div className="carousel-slide">
+            <img src="./OutreachImage.jpeg" alt="Bible Study" />
+            <p>Outreach Service Events</p>
+          </div>
+          <div className="carousel-slide">
+            <img src="./BIBLESTUDY.jpg" alt="Bible Study" />
+            <p>Weekly Bible Study</p>
+          </div>
         </div>
       </section>
 
