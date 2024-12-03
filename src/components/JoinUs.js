@@ -1,4 +1,3 @@
-// src/components/JoinUs.js
 import React, { useState } from 'react';
 import { Modal, Button, Form } from 'react-bootstrap';
 import './JoinUs.css';
@@ -9,7 +8,7 @@ const JoinUs = () => {
     name: '',
     contactNumber: '',
     address: '',
-    email: ''
+    email: '',
   });
 
   const handleInputChange = (e) => {
@@ -24,38 +23,44 @@ const JoinUs = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Handle form submission logic here (e.g., send data to server)
-    console.log(formData);
-    setShowModal(false); // Close the modal after submission
+    console.log(formData); // Add form submission logic here
+    setShowModal(false);
   };
 
   return (
     <div className="join-us-module">
-      <h2>Join Us as a Member Online</h2>
-      <p>Become a part of our community and connect with others who share your faith. Sign up today to access exclusive resources, events, and more.</p>
-      <Button variant="primary" onClick={handleShowModal}>Join Now</Button>
+      <div className="join-us-content">
+        <h2>Become a Part of Our Community</h2>
+        <p>
+          Join Zoe International Ministries to connect with like-minded people,
+          access exclusive resources, and grow in faith with us.
+        </p>
+        <Button variant="primary" onClick={handleShowModal} className="join-us-button">
+          Join Now
+        </Button>
+      </div>
 
-      {/* Modal for form */}
+      {/* Modal for Registration Form */}
       <Modal show={showModal} onHide={handleCloseModal} centered>
         <Modal.Header closeButton>
-          <Modal.Title>Join Us as a Member</Modal.Title>
+          <Modal.Title>Join Us</Modal.Title>
         </Modal.Header>
         <Modal.Body>
           <Form onSubmit={handleSubmit}>
-            <Form.Group controlId="formName">
-              <Form.Label>Name</Form.Label>
+            <Form.Group controlId="formName" className="form-group">
+              <Form.Label className="form-label">Full Name</Form.Label>
               <Form.Control
                 type="text"
                 name="name"
-                placeholder="Enter your name"
+                placeholder="Enter your full name"
                 value={formData.name}
                 onChange={handleInputChange}
                 required
               />
             </Form.Group>
 
-            <Form.Group controlId="formContactNumber" className="mt-3">
-              <Form.Label>Contact Number</Form.Label>
+            <Form.Group controlId="formContactNumber" className="form-group">
+              <Form.Label className="form-label">Contact Number</Form.Label>
               <Form.Control
                 type="tel"
                 name="contactNumber"
@@ -66,8 +71,8 @@ const JoinUs = () => {
               />
             </Form.Group>
 
-            <Form.Group controlId="formAddress" className="mt-3">
-              <Form.Label>Address</Form.Label>
+            <Form.Group controlId="formAddress" className="form-group">
+              <Form.Label className="form-label">Address</Form.Label>
               <Form.Control
                 type="text"
                 name="address"
@@ -78,19 +83,19 @@ const JoinUs = () => {
               />
             </Form.Group>
 
-            <Form.Group controlId="formEmail" className="mt-3">
-              <Form.Label>Email</Form.Label>
+            <Form.Group controlId="formEmail" className="form-group">
+              <Form.Label className="form-label">Email Address</Form.Label>
               <Form.Control
                 type="email"
                 name="email"
-                placeholder="Enter your email"
+                placeholder="Enter your email address"
                 value={formData.email}
                 onChange={handleInputChange}
                 required
               />
             </Form.Group>
 
-            <Button variant="primary" type="submit" className="mt-4">
+            <Button variant="primary" type="submit" className="mt-4 w-100">
               Submit
             </Button>
           </Form>
