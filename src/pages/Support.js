@@ -9,14 +9,13 @@ const Support = () => {
   return (
     <div className="support-container">
       <div className="support-header">
-        <h1>Support Our Church</h1>
+        <h2>Support Our Church</h2>
         <p className="support-intro">
           Together, we can make a difference! Your support helps us in serving the community and spreading love.
         </p>
       </div>
 
       <div className="support-options">
-        <h2>Ways to Support</h2>
         <ul className="support-list">
           {/* Make a Donation */}
           <li>

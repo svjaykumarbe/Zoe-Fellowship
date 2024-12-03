@@ -1,73 +1,105 @@
+/* Ministries Container */
 .ministries-container {
-    padding: 40px;
-    text-align: center;
-    font-family: Arial, sans-serif;
-  }
-  
-  h2 {
-    font-size: 2.5rem;
-    margin-bottom: 40px;
-    color: #0d6efd;
-  }
-
-  
-  .ministry-image {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 8px;
-    margin-bottom: 20px;
-  }
-  /* Ministries.css */
-
-.ministries-container {
-  padding: 20px;
+  padding: 40px;
   text-align: center;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to bottom, #f9f9f9, #ffffff);
+  border-radius: 12px;
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1);
+  max-width: 1200px;
+  margin: 30px auto;
 }
 
+/* Section Heading */
 h2 {
-  color: #333;
-  font-size: 2rem;
-  margin-bottom: 20px;
+  color: #0d6efd; /* Bright, attention-grabbing color */
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
 
+/* Ministries Grid */
 .ministries-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Adjusts the width */
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive layout */
   gap: 20px;
 }
 
+/* Ministry Card */
 .ministry-card {
-  background-color: #f8f9fa;
-  border-radius: 8px;
+  background-color: #f8f9fa; /* Light, neutral background */
+  border-radius: 10px;
   padding: 20px;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
   cursor: pointer;
+  text-align: center;
 }
 
 .ministry-card:hover {
-  transform: translateY(-5px);
+  transform: translateY(-5px); /* Lifts the card on hover */
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2); /* Enhances shadow on hover */
 }
 
+/* Ministry Image */
 .ministry-image {
   width: 100%;
-  height: 200px; /* Adjust height if needed */
+  height: 200px;
   object-fit: cover;
   border-radius: 8px;
   margin-bottom: 15px;
+  border: 3px solid #0d6efd; /* Adds a highlight border */
 }
 
+/* Ministry Card Heading */
 .ministry-card h3 {
-  color: #0056b3; /* Change to preferred color */
+  color: #0056b3; /* Modern, professional shade of blue */
   font-size: 1.5rem;
   margin: 10px 0;
+  font-weight: bold;
 }
 
+/* Ministry Card Description */
 .ministry-card p {
   color: #666;
   font-size: 1rem;
   margin-bottom: 10px;
+  line-height: 1.5;
+  text-align: justify; /* Better text alignment for long descriptions */
+}
+
+/* Card Button */
+.ministry-card button {
+  background: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+.ministry-card button:hover {
+  background: #0056b3; /* Darker blue on hover */
+}
+
+/* Modal Styling */
+.modal-header {
+  background: #0d6efd;
+  color: #fff;
+  border-bottom: none;
+  text-align: center;
+}
+
+.modal-header .modal-title {
+  font-size: 1.8rem;
+  color: #fff;
+}
+
+.modal-body {
+  padding: 20px;
+  text-align: center;
 }
 
 .modal-image {
@@ -75,4 +107,50 @@ h2 {
   height: auto;
   border-radius: 8px;
   margin-bottom: 15px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.modal-body p {
+  font-size: 1.2rem;
+  color: #34495e;
+  line-height: 1.8;
+  text-align: justify;
+}
+
+.modal-footer button {
+  font-size: 1rem;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+.modal-footer .btn-secondary {
+  background: #7f8c8d;
+  color: #fff;
+  border: none;
+}
+
+.modal-footer .btn-secondary:hover {
+  background: #5a6268;
+}
+
+.modal-footer .btn-primary {
+  background: #0d6efd;
+  color: #fff;
+  border: none;
+}
+
+.modal-footer .btn-primary:hover {
+  background: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .ministries-grid {
+    grid-template-columns: 1fr; /* Single column for smaller screens */
+  }
+
+  .modal-image {
+    height: auto;
+  }
 }

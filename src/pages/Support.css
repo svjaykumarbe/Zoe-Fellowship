@@ -44,7 +44,7 @@
   }
   
   .support-card {
-    background: #ffffff;
+    background: #faf7f7;
     padding: 20px;
     border-radius: 8px;
     text-align: center;
@@ -87,4 +87,5 @@
   .support-join {
     margin-top: 40px;
     text-align: center;
+    box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.2);
   }  

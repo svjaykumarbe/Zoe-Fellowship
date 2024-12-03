@@ -1,23 +1,25 @@
 .about-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    padding: 1rem;
-  }
-  
-  .about-content {
-    max-width: 800px; /* Adjust as needed */
-  }
-  
-  .back-button-container {
-    align-self: flex-start; /* Aligns the back button to the top */
-    margin-left: auto; /* Moves the button to the far right */
-  }  
-  .about-container {
-    background-color: #f9f9f9; /* Light background color */
-    padding: 20px;
-    border-radius: 8px; /* Optional: adds rounded corners for a modern look */
-  }
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 1rem;
+}
+
+.about-content {
+  max-width: 800px; /* Adjust as needed */
+}
+
+.back-button-container {
+  align-self: flex-start; /* Aligns the back button to the top */
+  margin-left: auto; /* Moves the button to the far right */
+}  
+
+.about-container {
+  background-color: #f9f9f9; /* Light background color */
+  padding: 20px;
+  border-radius: 8px; /* Optional: adds rounded corners for a modern look */
+}
+
 /* General Container Styling */
 .about-container {
   font-family: 'Arial', sans-serif;
@@ -58,10 +60,10 @@
 .about-mission {
   flex: 1; /* Takes up equal space */
   padding: 20px;
-  background: #ecf0f1;
+  background: rgb(228, 225, 225);
   border-radius: 8px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  max-width: 400px; /* Restrict width */
+  max-width: 600px; /* Increased width */
 }
 
 .about-mission h2 {
@@ -86,10 +88,10 @@
 .about-values {
   flex: 1; /* Takes up equal space */
   padding: 20px;
-  background: #f4f6f6;
+  background: rgb(228, 225, 225);
   border-radius: 8px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  max-width: 400px; /* Restrict width */
+  max-width: 600px; /* Increased width */
 }
 
 .about-values h2 {

@@ -1,491 +1,97 @@
-  /* Hero Section */
-  .hero-section {
-    position: relative;
-    text-align: center;
-  }
-  
-  .hero-image {
-    width: 100%;
-    height: auto;
-    max-height: 500px;
-    object-fit: cover;
-  }
-  
-  .hero-text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-  }
-  
-  .hero-text h1 {
-    font-size: 3rem;
-    margin-bottom: 10px;
-  }
-  
-  .hero-text p {
-    font-size: 1.5rem;
-  }
-  
-  /* About Section */
-  .about-section {
-    background: url('./Images/interior-church.jpg') no-repeat center center/cover; /* Replace with your image */
-    padding: 100px 20px;
-    text-align: center;
-    margin-top: 40px;
-  }
-  
-  .about-section h2 {
-    font-size: 2rem;
-    color: #555;
-    margin-bottom: 20px;
-  }
-  
-  .about-section p {
-    font-size: 1.2rem;
-    color: #555;
-    line-height: 1.6;
-  }
-  
-  /* Mission Section */
-  .mission-section {
-    margin-top: 40px;
-  }
-  
-  .mission-section h2 {
-    font-size: 2rem;
-    color: #555;
-    margin-bottom: 20px;
-  }
-  
-  .mission-section p {
-    font-size: 1.2rem;
-    color: #555;
-    line-height: 1.6;
-  }
-  
-  .mission-images {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 20px;
-  }
-  
-  .mission-image {
-    width: 48%;
-    height: auto;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  }
-  
-  /* History Section */
-  .history-section {
-    margin-top: 40px;
-  }
-  
-  .history-section h2 {
-    font-size: 2rem;
-    color: #555;
-    margin-bottom: 20px;
-  }
-  
-  .history-section p {
-    font-size: 1.2rem;
-    color: #555;
-    line-height: 1.6;
-  }
-  /* Home page styles */
-.home-page {
-  background-color: #555; /* Blue background for the home page */
-  color: white; /* Ensure text is white for contrast */
-  padding: 20px;
-  min-height: 100vh; /* Ensure the home page covers full screen height */
+/* General Styling */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.header {
-  text-align: center; /* Center the header text */
-  font-size: 2.5rem; /* Increase font size */
-  padding: 20px;
-}
-
-.mission {
-  margin-top: 40px;
-}
-
-.mission h2 {
-  font-size: 1.8rem;
-}
-
-.mission ul {
-  list-style: none;
-  padding-left: 0;
-}
-
-.mission li {
-  margin: 10px 0;
-  font-size: 1.2rem;
-}
-
-.ministries {
-  margin-top: 40px;
-}
-
-.ministries h2 {
-  font-size: 1.8rem;
-}
-
-.ministry-links {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 20px;
-}
-
-.ministry-link {
-  color: white;
+a {
   text-decoration: none;
-  padding: 10px 20px;
+}
+
+/* Home Section */
+.home {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  padding: 20px 0;
+}
+
+/* Hero Section */
+.hero {
+  background: url('./Images/interior-church.jpg') no-repeat center center/cover;
+  color: white;
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 15px;
+  text-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.hero p {
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+}
+
+.hero .btn {
+  padding: 12px 25px;
+  font-size: 1rem;
   background-color: #007bff;
-  border-radius: 5px;
+  color: white;
+  border-radius: 8px;
   transition: background-color 0.3s ease;
 }
 
-.ministry-link:hover {
-  background-color: #0056b3; /* Change link color on hover */
-}
-/* Home Page Styling */
-.home-page {
-  background-color: white;  /* Set the background color to white */
-  color: #555;              /* Set the font color to blue */
-  padding: 20px;
-  min-height: 80vh;         /* Ensure content fills the page so footer stays at the bottom */
+.hero .btn:hover {
+  background-color: #0056b3;
 }
 
-.home-page h1 {
-  font-size: 2.5rem;        /* Make the header large */
-  font-weight: bold;
-  margin-bottom: 20px;
-}
-
-.home-page p {
-  font-size: 1.2rem;        /* Increase font size for paragraphs */
-  line-height: 1.6;
-}
-
-.home-page a {
-  color: darkblue;          /* Set link color to dark blue */
-}
-/* Home.css */
-.home-container {
-  padding: 20px;
-  text-align: center;
-}
-
-.prayer-request-section {
-  margin-top: 20px;
-  border: 1px solid #ddd;
-  padding: 20px;
-  border-radius: 5px;
-  background-color: #f9f9f9;
-}
-
-.scrollable-requests {
-  max-height: 150px; /* Adjust height as needed */
-  overflow-y: auto;
-  border-top: 1px solid #ddd;
-  padding-top: 10px;
-  margin-top: 10px;
-}
-
-.scrollable-requests p {
-  margin: 5px 0;
-}
-
-.scrollable-requests button {
-  margin-top: 10px;
-  padding: 10px 20px;
-  background-color: #4CAF50;
-  color: white;
-  border: none;
-  border-radius: 3px;
-  cursor: pointer;
-}
-
-.scrollable-requests button:hover {
-  background-color: #45a049;
-}
-
-.prayer-request-form {
-  margin-top: 20px;
-  text-align: left;
-}
-
-.prayer-request-form label {
-  display: block;
-  margin-top: 10px;
-}
-
-.prayer-request-form input,
-.prayer-request-form textarea {
-  width: 100%;
-  padding: 8px;
-  margin-top: 5px;
-  border-radius: 3px;
-  border: 1px solid #ccc;
-}
-
-.prayer-request-form button {
-  margin-top: 10px;
-  padding: 10px 20px;
-  background-color: #4CAF50;
-  color: white;
-  border: none;
-  border-radius: 3px;
-  cursor: pointer;
-}
-
-.prayer-request-form button:hover {
-  background-color: #45a049;
-}
-/* New Home page Design */
-/* Home.css */
-
-.home {
-  font-family: Arial, sans-serif;
-}
-
-.hero {
-  background: url('./Images/interior-church.jpg') no-repeat center center/cover; /* Replace with your image */
-  text-align: center;
-  color: white;
-  padding: 40px;
-  text-align: center;
-}
-
-.btn {
-  padding: 10px 20px;
-  margin-top: 15px;
-  text-decoration: none;
-  font-weight: bold;
-  border-radius: 5px;
-}
-
-.btn-primary {
-  background-color: #007bff;
-  color: #fff;
-}
-
-.btn-secondary {
-  background-color: #6c757d;
-  color: #fff;
-}
-
-.btn-outline {
-  background-color: transparent;
-  border: 2px solid #007bff;
-  color: #007bff;
-}
-
-.about, .events, .cta {
-  /* background: url('./Images/interior-church.jpg') no-repeat center center/cover; Replace with your image */
+/* About Section */
+.about {
+  background-color: #ffffff;
   padding: 60px 20px;
   text-align: center;
 }
 
-.about h2, .events h2, .cta h2 {
-  font-size: 2em;
+.about h2 {
+  font-size: 2.5rem;
+  color: #333;
   margin-bottom: 20px;
 }
 
-.about p, .events p, .cta p {
-  font-size: 1.1em;
-  margin-bottom: 15px;
+.about p {
+  font-size: 1.2rem;
+  color: #555;
+  line-height: 1.8;
+  margin-bottom: 20px;
 }
 
-.events-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-}
-
-.event {
-  background-color: #e0ffe0;
-  padding: 20px;
+.about .btn-secondary {
+  background-color: #6c757d;
+  color: white;
+  padding: 10px 20px;
   border-radius: 8px;
-  width: 300px;
-  text-align: left;
-}
-/* Home page container */
-.home {
-  background-color: #e6f2ff; /* Light sky blue background */
+  transition: background-color 0.3s ease;
 }
 
-.hero-content h1 {
-  font-size: 36px;
-  color: black;
+.about .btn-secondary:hover {
+  background-color: #5a6268;
 }
 
-.hero-content p {
-  font-size: 18px;
-  color: black;
-}
-
-/* Structured Grid Section */
-.structured-grid {
-  padding: 40px 20px;
-  background-color: #e6f2ff;
-}
-
-/* Grid item styling */
-.grid-item {
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  color: #333;
-  text-align: center;
-  font-family: Arial, sans-serif;
-}
-
-.grid-item h3 {
-  font-size: 14px;
-  color: #888;
-  text-transform: uppercase;
-}
-
-.grid-item h2 {
-  font-size: 24px;
-  font-weight: bold;
-  color: #333;
-}
-
-/* Color variations */
-.light-blue {
-  background-color: #e0f7ff;
-}
-
-.light-pink {
-  background-color: #ffe0f0;
-}
-
-.light-green {
-  background-color: #e0ffe0;
-}
-
-.light-orange {
-  background-color: #fff5e0;
-}
-
-.grid-item p {
-  font-size: 14px;
-  color: #007bff;
-  margin-top: 10px;
-}
-
-/* Color variations */
-.light-blue {
-  background-color: #e0f7ff;
-}
-
-.light-green {
-  background-color: #e0ffe0;
-}
-
-.light-pink {
-  background-color: #ffe0f0;
-}
-
-.light-orange {
-  background-color: #fff5e0;
-}
-
-.upcoming-events .container {
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.grid-item img {
-  max-height: 150px; /* Set a maximum height for images */
-  width: auto;
-  border-radius: 8px;
-  margin-bottom: 10px;
-}
-
-.grid-item p {
-  font-size: 0.9em;
-  margin: 5px 0;
-}
-
-.btn-outline {
-  margin-top: 10px;
+/* Upcoming Events Section */
+.upcoming-events {
+  background: #e6f2ff;
+  padding: 60px 20px;
 }
 
 .upcoming-events h2 {
-  color: #0073e6;
   font-size: 2.5rem;
-  margin-bottom: 1.5rem;
-}
-
-.grid-item:hover {
-  transform: translateY(-5px);
-}
-
-.grid-item p {
-  
-  font-size: 1rem;
-  margin-bottom: 1rem;
-}
-
-.event-image {
-  width: 100%;
-  height: 100%;
-  object-fit: cover; /* Ensures the image covers the area while maintaining aspect ratio */
-  border-radius: 10px; /* Optional: To keep rounded corners */
-}
-
-.btn-outline {
-  display: inline-block;
-  padding: 0.5rem 1.2rem;
-  color: #fff;
-  border: 1px solid #fff;
-  border-radius: 5px;
-  text-decoration: none;
-  transition: background-color 0.3s, color 0.3s;
-}
-
-.btn-outline:hover {
-  background-color: #fff;
-  color: #fff;
-}
-.countdown-container {
-  border: 2px solid #4CAF50; /* Change color as needed */
-  border-radius: 8px;
-  padding: 20px;
-  margin: 20px auto;
-  max-width: 1300px;
-  text-align: center;
-  background-color: #f9f9f9; /* Light background for emphasis */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.countdown-container h2 {
-  font-size: 1.5em;
   color: #333;
-  margin-bottom: 10px;
-}
-.upcoming-events {
-  padding: 50px 0;
-  background: rgb(213, 225, 232); /* Light subtle background */
+  margin-bottom: 40px;
   text-align: center;
-}
-
-.section-title {
-  font-size: 2.5rem;
-  font-weight: bold;
-  color: #333;
-  margin-bottom: 30px;
-  text-transform: uppercase;
-  letter-spacing: 2px;
 }
 
 .grid-container {
@@ -496,22 +102,28 @@
 }
 
 .grid-item {
-  background: #ffffff; /* Pure white background */
-  border-radius: 15px; /* Slightly more rounded corners */
-  padding: 20px; /* Consistent padding */
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15); /* Softer, more noticeable shadow */
-  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effects */
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Add hover effect for interactivity */
 .grid-item:hover {
-  transform: translateY(-5px); /* Subtle lift on hover */
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
 }
 
-.grid-item img.event-image {
+.grid-item h3 {
+  font-size: 1.2rem;
+  color: #007bff;
+  margin-bottom: 15px;
+}
+
+.grid-item iframe {
   width: 100%;
-  height: auto;
+  height: 200px;
   border-radius: 8px;
   margin-bottom: 15px;
 }
@@ -519,59 +131,81 @@
 .grid-item p {
   font-size: 1rem;
   color: #555;
-  margin-bottom: 15px;
+  line-height: 1.6;
 }
 
+/* Countdown Timer */
+.countdown-container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+  text-align: center;
+  background-color: lightgray;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.countdown-container h2 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.countdown-container p {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+/* Button Styles */
 .btn {
-  text-decoration: none;
   padding: 10px 20px;
-  border-radius: 20px;
+  border-radius: 8px;
   font-size: 1rem;
   font-weight: bold;
-  transition: background 0.3s ease, color 0.3s ease;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .btn-outline {
-  border: 2px solid #333;
-  color: #333;
+  border: 2px solid #007bff;
+  color: #007bff;
   background: transparent;
 }
 
 .btn-outline:hover {
-  background: #333;
-  color: #fff;
+  background: #007bff;
+  color: white;
+}
+
+/* Color Variants */
+.light-blue {
+  background-color: #e0f7ff;
 }
 
 .light-green {
-  background: #e8f5e9;
+  background-color: #e8f5e9;
 }
 
 .light-orange {
-  background: #ffecb3;
+  background-color: #ffecb3;
 }
 
 .light-pink {
-  background: #fce4ec;
-}
-nav ul {
-  list-style-type: none;
-  padding: 0;
-  display: flex;
-  gap: 20px;
+  background-color: #fce4ec;
 }
 
-nav ul li {
-  display: inline;
-}
-
-nav ul li a {
-  text-decoration: none;
+/* Footer */
+footer {
+  background-color: #333;
   color: white;
-  background-color: #007bff;
-  padding: 10px 20px;
-  border-radius: 5px;
+  text-align: center;
+  padding: 20px;
 }
 
-nav ul li a:hover {
-  background-color: #0056b3;
+footer a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
 }

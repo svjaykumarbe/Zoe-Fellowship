@@ -26,7 +26,7 @@ const About = () => {
               <strong>Revive:</strong> To revive the spiritual life of the people who connect so that they go and carry the mission.
             </p>
             <p>
-              <strong>Renew:</strong> Renew of mind, spirit, and body, transformed lives.
+              <strong>Renew:</strong> Renewal of mind, spirit, and body, leading to transformed lives.
             </p>
             <p>
               <strong>Refine:</strong> As silver is refined, so will they be refined with the word of God.
