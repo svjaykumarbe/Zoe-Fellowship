@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import JoinUs from '../components/JoinUs';
 import './Support.css'; // Import CSS for styling
 
