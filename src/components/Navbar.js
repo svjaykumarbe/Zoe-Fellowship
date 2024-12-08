@@ -10,7 +10,11 @@ const Navbar = () => {
     <nav className="navbar navbar-expand-lg navbar-light bg-light">
       <div className="container">
         {/* Modern Menu Title */}
-        <Link className="navbar-brand" to="/" style={{ fontSize: '24px', fontWeight: 'bold', color: '#107C17' }}>
+        <Link
+          className="navbar-brand"
+          to="/"
+          style={{ fontSize: '24px', fontWeight: 'bold', color: '#107C17' }}
+        >
           Zoe Fellowship
         </Link>
 
@@ -28,22 +32,39 @@ const Navbar = () => {
         <div className={`collapse navbar-collapse ${isOpen ? 'show' : ''}`} id="navbarNav">
           <ul className="navbar-nav ml-auto">
             <li className="nav-item">
-              <Link className="nav-link" to="/" onClick={() => setIsOpen(false)}>Home</Link>
+              <Link className="nav-link" to="/" onClick={() => setIsOpen(false)}>
+                Home
+              </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/about" onClick={() => setIsOpen(false)}>About Us</Link>
+              <Link className="nav-link" to="/about" onClick={() => setIsOpen(false)}>
+                About Us
+              </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/ministries" onClick={() => setIsOpen(false)}>Ministries</Link>
+              <Link className="nav-link" to="/ministries" onClick={() => setIsOpen(false)}>
+                Ministries
+              </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/events" onClick={() => setIsOpen(false)}>Events</Link>
+              <Link className="nav-link" to="/events" onClick={() => setIsOpen(false)}>
+                Events
+              </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/contact" onClick={() => setIsOpen(false)}>Contact Us</Link>
+              <Link className="nav-link" to="/contact" onClick={() => setIsOpen(false)}>
+                Contact Us
+              </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/support" onClick={() => setIsOpen(false)}>Support</Link>
+              <Link className="nav-link" to="/support" onClick={() => setIsOpen(false)}>
+                Support
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link className="nav-link" to="/prayer-request" onClick={() => setIsOpen(false)}>
+                Prayer Request
+              </Link>
             </li>
           </ul>
 

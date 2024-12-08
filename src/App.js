@@ -11,6 +11,7 @@ import Donation from './pages/Donation';
 import Support from './pages/Support'; // Import Support page
 import Volunteer from './pages/Volunteer'; // Import Volunteer page
 import LearnMore from './pages/LearnMore'; 
+import PrayerRequest from './pages/PrayerRequest';
 //import DisciplePage from './pages/DisciplePage'; // Rename this import to DisciplePage
 
 import './index.css';
@@ -36,6 +37,7 @@ function App() {
           <Route path="/donation" element={<Donation />} /> {/* Updated for React Router v6 */}
           <Route path="/volunteer" element={<Volunteer/>}/>
           <Route path="/learnmore" element={<LearnMore />} />
+          <Route path="/prayer-request" element={<PrayerRequest />} />
         </Routes>
       </div>
       </div>

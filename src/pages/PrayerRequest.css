@@ -1,0 +1,77 @@
+/* PrayerRequest.css */
+
+.prayer-request-page {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+      url('../pages/Images/Prayer_req.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+    min-height: 100vh;
+    padding: 50px 20px;
+  }
+  
+  .prayer-request-header {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .prayer-request-header h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+  }
+  
+  .prayer-request-header p {
+    font-size: 1.5rem;
+    color: #d1e7dd;
+  }
+  
+  .prayer-request-form-container {
+    max-width: 600px;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    padding: 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .prayer-request-form .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .prayer-request-form .form-group label {
+    font-size: 1.2rem;
+    display: block;
+    margin-bottom: 8px;
+  }
+  
+  .prayer-request-form .form-group input,
+  .prayer-request-form .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    background: rgba(255, 255, 255, 0.8);
+  }
+  
+  .prayer-request-form .form-group textarea {
+    resize: none;
+  }
+  
+  .btn-submit {
+    display: block;
+    width: 100%;
+    background-color: #107C17;
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .btn-submit:hover {
+    background-color: #0b5a11;
+    transform: translateY(-2px);
+  }  

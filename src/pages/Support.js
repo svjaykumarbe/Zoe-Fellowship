@@ -9,33 +9,10 @@ const Support = () => {
   return (
     <div className="support-container">
       <div className="support-header">
-        <h2>Support Our Church</h2>
+        <h2>Join Us</h2>
         <p className="support-intro">
-          Together, we can make a difference! Your support helps us in serving the community and spreading love.
+        Together, we can make a difference! Be part of our mission to serve the community and spread love.
         </p>
-      </div>
-
-      <div className="support-options">
-        <ul className="support-list">
-          {/* Make a Donation */}
-          <li>
-            <Link to="/donation" className="support-link">
-              <div className="support-card">
-                <h3>Make a Donation</h3>
-                <p>Contribute financially to our mission and community.</p>
-              </div>
-            </Link>
-          </li>
-          {/* Volunteer Your Time */}
-          <li>
-            <Link to="/volunteer" className="support-link">
-              <div className="support-card">
-                <h3>Volunteer Your Time</h3>
-                <p>Be a part of our team by volunteering.</p>
-              </div>
-            </Link>
-          </li>
-        </ul>
       </div>
 
       {/* Include JoinUs module */}
