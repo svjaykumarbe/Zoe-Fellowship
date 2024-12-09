@@ -57,6 +57,11 @@ const Navbar = () => {
               </Link>
             </li>
             <li className="nav-item">
+              <Link className="nav-link" to="/gallery" onClick={() => setIsOpen(false)}>
+                Gallery
+              </Link>
+            </li>
+            <li className="nav-item">
               <Link className="nav-link" to="/support" onClick={() => setIsOpen(false)}>
                 JoinUS
               </Link>

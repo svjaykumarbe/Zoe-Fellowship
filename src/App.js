@@ -12,6 +12,10 @@ import Support from './pages/Support'; // Import Support page
 import Volunteer from './pages/Volunteer'; // Import Volunteer page
 import LearnMore from './pages/LearnMore'; 
 import PrayerRequest from './pages/PrayerRequest';
+import Gallery from './pages/Gallery';
+import { ThemeProvider } from '@mui/material/styles';
+import CssBaseline from '@mui/material/CssBaseline';
+import theme from './pages/theme';
 //import DisciplePage from './pages/DisciplePage'; // Rename this import to DisciplePage
 
 import './index.css';
@@ -22,6 +26,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (
+    <ThemeProvider theme={theme}>
+      <CssBaseline />
     <Router>
       <div className="wrapper">
       <Navbar />
@@ -38,12 +44,14 @@ function App() {
           <Route path="/volunteer" element={<Volunteer/>}/>
           <Route path="/learnmore" element={<LearnMore />} />
           <Route path="/prayer-request" element={<PrayerRequest />} />
+          <Route path="/gallery" element={<Gallery />} />
         </Routes>
       </div>
       </div>
       <Footer />
       </div>
     </Router>
+    </ThemeProvider>
   );
 }
 

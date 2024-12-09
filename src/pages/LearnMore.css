@@ -10,20 +10,23 @@
 /* Hero Section */
 .hero {
   background: url('./Images/interior-church.jpg') no-repeat center center/cover;
-  color: blue;
+  color: white; /* Ensuring good contrast with the text */
   text-align: center;
   padding: 80px 20px;
+  position: relative;
 }
 
 .hero-overlay {
   padding: 20px;
   border-radius: 8px;
+  background: rgba(0, 0, 0, 0.6); /* Darker overlay for better contrast */
 }
 
 .hero h1 {
   font-size: 3.5rem;
   margin: 0;
   letter-spacing: 2px;
+  font-weight: 700;
 }
 
 .hero-description {
@@ -32,32 +35,35 @@
   font-weight: 300;
 }
 
-/* Section Cards */
-.section {
-  padding: 60px 20px;
-  text-align: center;
+/* Main Content Section */
+.learn-more-page .MuiContainer-root {
+  border: 2px solid #107C17; /* Visible border around the container */
+  padding: 20px;
 }
 
+/* Section Cards */
 .section-card {
   background-color: #ffffff;
   padding: 30px;
   border-radius: 12px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  max-width: 800px;
-  margin: 20px auto;
+  text-align: center;
+  height: 100%; /* Ensuring all cards are the same height */
+  max-width: 100%;
 }
 
-.section-card h2 {
-  font-size: 2.2rem;
-  color: #2c3e50;
-  margin-bottom: 20px;
+.section-card h5 {
+  font-size: 2rem;
+  color: #107C17; /* Vibrant green color for titles */
+  margin-bottom: 15px;
 }
 
 .section-card p {
   font-size: 1.1rem;
   color: #555;
   line-height: 1.6;
+  font-weight: 300;
 }
 
 /* Hover Effect for Cards */
@@ -84,7 +90,13 @@
     padding: 20px;
   }
 
-  .section-card h2 {
+  .section-card h5 {
     font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .section-card {
+    width: 100%; /* Full width for very small screens */
   }
 }
