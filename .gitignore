@@ -12,6 +12,13 @@ node_modules/
 # production
 /build
 
+# Ignore Docker related files
+Docker.app/
+*.img
+*.framework
+Dockerfile
+docker-compose.yml
+
 # misc
 .DS_Store
 .env.local
