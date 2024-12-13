@@ -64,11 +64,11 @@ const Events = () => {
               height: '100%',
             }}
           >
-            <Typography variant="h5" component="div" gutterBottom>
+            <Typography variant="h5" component="div" gutterBottom sx={{ color: '#333', fontWeight: 'bold' }}>
               Select a Date
             </Typography>
             <Calendar onChange={setDate} value={date} />
-            <Typography variant="body2" sx={{ marginTop: 2 }}>
+            <Typography variant="body2" sx={{ marginTop: 2, color: '#666' }}>
               Selected Date: {date.toDateString()}
             </Typography>
           </Paper>
@@ -85,7 +85,7 @@ const Events = () => {
               height: '100%',
             }}
           >
-            <Typography variant="h5" component="div" gutterBottom>
+            <Typography variant="h5" component="div" gutterBottom sx={{ color: '#333', fontWeight: 'bold' }}>
               Upcoming Events
             </Typography>
             <Box sx={{ display: 'flex', flexDirection: 'column', gap: 3 }}>
@@ -97,14 +97,15 @@ const Events = () => {
                     padding: '16px',
                     borderRadius: '15px',
                     boxShadow: 3,
-                    transition: 'transform 0.3s ease',
+                    transition: 'transform 0.3s ease, box-shadow 0.3s ease',
                     '&:hover': {
-                      transform: 'scale(1.03)', // Hover effect to lift the card
+                      transform: 'scale(1.03)',
+                      boxShadow: '0px 8px 16px rgba(0, 0, 0, 0.15)',
                     },
                   }}
                 >
                   <CardContent>
-                    <Typography variant="h6" component="div" gutterBottom>
+                    <Typography variant="h6" component="div" sx={{ color: '#34495e', fontWeight: 'bold' }}>
                       {event.title}
                     </Typography>
                     <Typography variant="body2" color="text.secondary">
@@ -146,7 +147,7 @@ const Events = () => {
               }}
             >
               <CardContent>
-                <Typography variant="h6" component="div">
+                <Typography variant="h6" component="div" sx={{ fontWeight: 'bold', color: '#34495e' }}>
                   Sunday Sermon Highlights
                 </Typography>
                 <Typography variant="body2" color="text.secondary">
@@ -179,7 +180,7 @@ const Events = () => {
               }}
             >
               <CardContent>
-                <Typography variant="h6" component="div">
+                <Typography variant="h6" component="div" sx={{ fontWeight: 'bold', color: '#34495e' }}>
                   Weekly Bible Study Highlights
                 </Typography>
                 <Typography variant="body2" color="text.secondary">

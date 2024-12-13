@@ -30,7 +30,7 @@ const CountdownTimer = ({ targetDate }) => {
   return (
     <div style={{ display: 'flex', alignItems: 'center', gap: '20px', padding: '10px', backgroundColor: '#f9f9f9', borderRadius: '8px' }}>
       <div style={{ flex: 1 }}>
-        <h3>Next Event Starts In</h3>
+        <h3>Zoe International Ministries Online Service</h3>
         
       </div>
       <div style={{ display: 'flex', gap: '10px', alignItems: 'center', backgroundColor: '#333', color: '#fff', padding: '10px 20px', borderRadius: '8px' }}>

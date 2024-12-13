@@ -1,91 +1,130 @@
+/* Support Container */
 .support-container {
-    font-family: 'Arial', sans-serif;
-    background: linear-gradient(to bottom, #f9f9f9, #ffffff);
-    padding: 40px 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(to bottom, #f9f9f9, #ffffff); /* Gradient background */
+  padding: 40px 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 1200px; /* Restrict max width */
+  margin: 0 auto; /* Center-align the container */
+}
+
+/* Header Section */
+.support-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.support-header h1 {
+  font-size: 2.5rem;
+  color: #2c3e50;
+  font-weight: 600;
+}
+
+.support-intro {
+  font-size: 1.2rem;
+  color: #7f8c8d;
+  margin-top: 10px;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+/* Join Us Section */
+.support-options h2 {
+  font-size: 2rem;
+  color: #34495e;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.support-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* Card Link */
+.support-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Support Cards */
+.support-card {
+  background: #faf7f7;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+  width: 250px;
+  border: 3px solid transparent; /* Default transparent border */
+}
+
+/* Specific Border Colors for Each Card */
+.support-card:nth-child(1) {
+  border-color: #2980b9; /* Blue */
+}
+
+.support-card:nth-child(2) {
+  border-color: #27ae60; /* Green */
+}
+
+.support-card:nth-child(3) {
+  border-color: #8e44ad; /* Purple */
+}
+
+/* Hover Effects for Cards */
+.support-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.support-card h3 {
+  font-size: 1.5rem;
+  color: #34495e;
+}
+
+.support-card p {
+  font-size: 1rem;
+  color: #7f8c8d;
+}
+
+/* Join Us Module Section */
+.support-join {
+  margin-top: 40px;
+  text-align: center;
+  background-color: #fff;
+  padding: 40px 20px;
+  border-radius: 12px;
+  box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Design Adjustments */
+@media (max-width: 768px) {
+  .support-container {
+      padding: 20px;
   }
-  
-  .support-header {
-    text-align: center;
-    margin-bottom: 30px;
-  }
-  
+
   .support-header h1 {
-    font-size: 2.5rem;
-    color: #2c3e50;
+      font-size: 2rem;
   }
-  
+
   .support-intro {
-    font-size: 1.2rem;
-    color: #7f8c8d;
-    margin-top: 10px;
+      font-size: 1rem;
   }
-  
-  .support-options h2 {
-    font-size: 2rem;
-    color: #34495e;
-    margin-bottom: 20px;
-    text-align: center;
-  }
-  
-  .support-list {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-  }
-  
-  .support-link {
-    text-decoration: none;
-    color: inherit;
-  }
-  
+
   .support-card {
-    background: #faf7f7;
-    padding: 20px;
-    border-radius: 8px;
-    text-align: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.2s, box-shadow 0.2s;
-    width: 250px;
-    border: 3px solid transparent; /* Default transparent border */
+      width: 100%;
+      max-width: 280px; /* Ensures cards don't stretch too much */
   }
-  
-  /* Border color for "Make a Donation" */
-  .support-card:nth-child(1) {
-    border-color: #2980b9; /* Blue */
+
+  .support-list {
+      flex-direction: column;
+      align-items: center;
+      gap: 15px;
   }
-  
-  /* Border color for "Volunteer Your Time" */
-  .support-card:nth-child(2) {
-    border-color: #27ae60; /* Green */
-  }
-  
-  /* Border color for "Join Us as a Member Online" */
-  .support-card:nth-child(3) {
-    border-color: #8e44ad; /* Purple */
-  }
-  
-  .support-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-  }
-  
-  .support-card h3 {
-    font-size: 1.5rem;
-    color: #34495e;
-  }
-  
-  .support-card p {
-    font-size: 1rem;
-    color: #7f8c8d;
-  }
-  
-  .support-join {
-    margin-top: 40px;
-    text-align: center;
-    box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.2);
-  }  
+}

@@ -20,7 +20,7 @@ a {
 /* Hero Section with Parallax Effect */
 .hero {
   background: url('./Images/interior-church.jpg') no-repeat center center/cover;
-  color: white;
+  color: #333;
   text-align: center;
   padding: 80px 20px;
 }
@@ -28,6 +28,8 @@ a {
 .hero-content {
   padding: 40px;
   border-radius: 10px;
+  color: #333;
+  font-weight: 600;
 }
 
 .hero h1 {
@@ -49,7 +51,6 @@ a {
   padding: 12px 25px;
   font-size: 1rem;
   background-color: #007bff;
-  color: white;
   border-radius: 8px;
   transition: background-color 0.3s ease;
 }
@@ -154,6 +155,7 @@ a {
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 20px;
   justify-items: center;
+  color: #333;
 }
 
 .grid-item {
@@ -191,11 +193,11 @@ a {
 
 /* Countdown Timer Section */
 .countdown-container {
-  max-width: 900px;
+  max-width: 1200px;
   margin: 40px auto;
   padding: 20px;
   text-align: center;
-  background-color: #007bff;
+  background-color: #b7d2ee;
   border-radius: 10px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
@@ -226,4 +228,10 @@ footer a {
 
 footer a:hover {
   text-decoration: underline;
+}
+.home-heading-module h1 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 20px;
+  font-weight: 600;
 }
