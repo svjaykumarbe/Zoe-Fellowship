@@ -26,11 +26,11 @@ const Home = () => {
             <p>Sunday Worship Service</p>
           </div>
           <div className="carousel-slide">
-            <img src="./Prayerdiverse.jpeg" alt="Community Prayer" />
+            <img src="./Prayerdiverse.jpg" alt="Community Prayer" />
             <p>Community Prayer Gathering</p>
           </div>
           <div className="carousel-slide">
-            <img src="./OutreachImage.jpeg" alt="Bible Study" />
+            <img src="./OutreachImage.jpg" alt="Bible Study" />
             <p>Outreach Service Events</p>
           </div>
           <div className="carousel-slide">
