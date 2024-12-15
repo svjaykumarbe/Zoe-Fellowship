@@ -20,13 +20,15 @@ const PrayerRequest = () => {
         border: '2px solid #e0e0e0', // Border for container
         borderRadius: '20px',
         boxShadow: '0px 8px 16px rgba(0, 0, 0, 0.1)', // Shadow effect
-        backgroundColor: '#fff',
+        backgroundColor: '#f9fafb', // Light background color
         padding: 4,
+        maxWidth: '800px', // Responsive max-width
+        margin: 'auto',
       }}
     >
       {/* Header Section */}
       <Box textAlign="center" mb={4}>
-        <Typography variant="h4" sx={{ fontWeight: 'bold', color: '#333' }}>
+        <Typography variant="h4" sx={{ fontWeight: 'bold', color: '#333', letterSpacing: 1 }}>
           Share Your Prayer Request
         </Typography>
         <Typography variant="h6" sx={{ color: '#666', marginTop: 2 }}>
@@ -35,7 +37,7 @@ const PrayerRequest = () => {
       </Box>
 
       {/* Prayer Request Form Section */}
-      <Paper sx={{ padding: 4, borderRadius: '15px', boxShadow: 3 }}>
+      <Paper sx={{ padding: 4, borderRadius: '15px', boxShadow: 3, backgroundColor: '#ffffff' }}>
         <form onSubmit={handleSubmit}>
           <Grid container spacing={3}>
             {/* Name Input */}
@@ -48,6 +50,17 @@ const PrayerRequest = () => {
                 onChange={(e) => setName(e.target.value)}
                 placeholder="Enter your name"
                 required
+                sx={{
+                  '& .MuiOutlinedInput-root': {
+                    borderRadius: '10px',
+                    '& fieldset': {
+                      borderColor: '#ccc',
+                    },
+                    '&:hover fieldset': {
+                      borderColor: '#3f51b5', // Hover border color
+                    },
+                  },
+                }}
               />
             </Grid>
 
@@ -62,6 +75,17 @@ const PrayerRequest = () => {
                 onChange={(e) => setEmail(e.target.value)}
                 placeholder="Enter your email"
                 required
+                sx={{
+                  '& .MuiOutlinedInput-root': {
+                    borderRadius: '10px',
+                    '& fieldset': {
+                      borderColor: '#ccc',
+                    },
+                    '&:hover fieldset': {
+                      borderColor: '#3f51b5', // Hover border color
+                    },
+                  },
+                }}
               />
             </Grid>
 
@@ -77,6 +101,17 @@ const PrayerRequest = () => {
                 onChange={(e) => setPrayerRequest(e.target.value)}
                 placeholder="Write your prayer request here..."
                 required
+                sx={{
+                  '& .MuiOutlinedInput-root': {
+                    borderRadius: '10px',
+                    '& fieldset': {
+                      borderColor: '#ccc',
+                    },
+                    '&:hover fieldset': {
+                      borderColor: '#3f51b5', // Hover border color
+                    },
+                  },
+                }}
               />
             </Grid>
 
@@ -88,9 +123,14 @@ const PrayerRequest = () => {
                 color="primary"
                 sx={{
                   padding: '10px 20px',
-                  borderRadius: '10px',
+                  borderRadius: '30px', // Rounded button
                   fontSize: '16px',
                   mt: 3,
+                  background: 'linear-gradient(to right, #3f51b5, #2196f3)', // Gradient button
+                  '&:hover': {
+                    background: 'linear-gradient(to right, #2196f3, #3f51b5)',
+                    boxShadow: '0 4px 10px rgba(0, 0, 0, 0.2)',
+                  },
                 }}
               >
                 Submit Prayer Request

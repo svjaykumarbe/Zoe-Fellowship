@@ -30,22 +30,26 @@ const JoinUs = () => {
   return (
     <div className="join-us-module">
       <div className="join-us-content">
-        <h2>Become a Part of Our Community</h2>
-        <p>
+        <h2 className="heading">Become a Part of Our Community</h2>
+        <p className="subheading">
           Join Zoe International Ministries to connect with like-minded people,
           access exclusive resources, and grow in faith with us.
         </p>
-        <Button variant="primary" onClick={handleShowModal} className="join-us-button">
+        <Button
+          variant="primary"
+          onClick={handleShowModal}
+          className="join-us-button"
+        >
           Join Now
         </Button>
       </div>
 
       {/* Modal for Registration Form */}
       <Modal show={showModal} onHide={handleCloseModal} centered>
-        <Modal.Header closeButton>
+        <Modal.Header closeButton className="modal-header">
           <Modal.Title>Join Us</Modal.Title>
         </Modal.Header>
-        <Modal.Body>
+        <Modal.Body className="modal-body">
           <Form onSubmit={handleSubmit}>
             <Form.Group controlId="formName" className="form-group">
               <Form.Label className="form-label">Full Name</Form.Label>
@@ -56,6 +60,7 @@ const JoinUs = () => {
                 value={formData.name}
                 onChange={handleInputChange}
                 required
+                className="form-input"
               />
             </Form.Group>
 
@@ -68,6 +73,7 @@ const JoinUs = () => {
                 value={formData.contactNumber}
                 onChange={handleInputChange}
                 required
+                className="form-input"
               />
             </Form.Group>
 
@@ -80,6 +86,7 @@ const JoinUs = () => {
                 value={formData.address}
                 onChange={handleInputChange}
                 required
+                className="form-input"
               />
             </Form.Group>
 
@@ -92,10 +99,11 @@ const JoinUs = () => {
                 value={formData.email}
                 onChange={handleInputChange}
                 required
+                className="form-input"
               />
             </Form.Group>
 
-            <Button variant="primary" type="submit" className="mt-4 w-100">
+            <Button variant="primary" type="submit" className="submit-button">
               Submit
             </Button>
           </Form>

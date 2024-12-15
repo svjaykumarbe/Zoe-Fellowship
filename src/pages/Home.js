@@ -9,7 +9,7 @@ const Home = () => {
       {/* Hero Section with Parallax Effect */}
       <section className="hero parallax">
         <div className="hero-content">
-          <h1>Welcome to Zoe International Ministries</h1>
+          <div className="home-heading-module h1"> Welcome to Zoe International Ministries</div>
           <p>Building a community of faith, love, and service.</p>
           <Link to="/learnmore" className="btn btn-primary">
             Learn More
@@ -101,7 +101,7 @@ const Home = () => {
 
       {/* Countdown Timer Section */}
       <section className="countdown-container">
-        <h1>Zoe International Ministries Online Service</h1>
+        <h1>Next Event Starts In</h1>
         <CountdownTimer targetDate="2024-12-14T18:00:00" />
       </section>
     </div>
