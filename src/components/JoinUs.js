@@ -1,115 +1,119 @@
 import React, { useState } from 'react';
-import { Modal, Button, Form } from 'react-bootstrap';
-import './JoinUs.css';
+import { Box, TextField, Button, Typography, IconButton } from '@mui/material';
+import CloseIcon from '@mui/icons-material/Close';
 
 const JoinUs = () => {
-  const [showModal, setShowModal] = useState(false);
+  const [isVisible, setIsVisible] = useState(true); // State to control form visibility
   const [formData, setFormData] = useState({
-    name: '',
-    contactNumber: '',
-    address: '',
+    fullName: '',
     email: '',
+    address: '',
+    phoneNumber: '',
   });
 
-  const handleInputChange = (e) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value,
-    });
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({ ...formData, [name]: value });
   };
-
-  const handleShowModal = () => setShowModal(true);
-  const handleCloseModal = () => setShowModal(false);
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(formData); // Add form submission logic here
-    setShowModal(false);
+    console.log('Join Us Form Data:', formData);
+    alert('Thank you for joining us!');
   };
 
+  const handleClose = () => {
+    setIsVisible(false); // Hide the form when Close button is clicked
+  };
+
+  if (!isVisible) return null; // Render nothing if the form is hidden
+
   return (
-    <div className="join-us-module">
-      <div className="join-us-content">
-        <h2 className="heading">Become a Part of Our Community</h2>
-        <p className="subheading">
-          Join Zoe International Ministries to connect with like-minded people,
-          access exclusive resources, and grow in faith with us.
-        </p>
-        <Button
-          variant="primary"
-          onClick={handleShowModal}
-          className="join-us-button"
-        >
-          Join Now
-        </Button>
-      </div>
+    <Box
+      component="form"
+      onSubmit={handleSubmit}
+      sx={{
+        display: 'flex',
+        flexDirection: 'column',
+        gap: 2,
+        maxWidth: '500px',
+        margin: '0 auto',
+        p: 3,
+        border: '1px solid #ddd',
+        borderRadius: 4,
+        boxShadow: '0 4px 12px rgba(0,0,0,0.1)',
+        backgroundColor: 'white',
+        position: 'relative',
+      }}
+    >
+      {/* Close Button */}
+      <IconButton
+        onClick={handleClose}
+        sx={{
+          position: 'absolute',
+          top: 8,
+          right: 8,
+          color: '#555',
+        }}
+      >
+        <CloseIcon />
+      </IconButton>
 
-      {/* Modal for Registration Form */}
-      <Modal show={showModal} onHide={handleCloseModal} centered>
-        <Modal.Header closeButton className="modal-header">
-          <Modal.Title>Join Us</Modal.Title>
-        </Modal.Header>
-        <Modal.Body className="modal-body">
-          <Form onSubmit={handleSubmit}>
-            <Form.Group controlId="formName" className="form-group">
-              <Form.Label className="form-label">Full Name</Form.Label>
-              <Form.Control
-                type="text"
-                name="name"
-                placeholder="Enter your full name"
-                value={formData.name}
-                onChange={handleInputChange}
-                required
-                className="form-input"
-              />
-            </Form.Group>
+      {/* Form Header */}
+      <Typography variant="h5" fontWeight="bold" textAlign="center" mb={2}>
+        Join Us
+      </Typography>
 
-            <Form.Group controlId="formContactNumber" className="form-group">
-              <Form.Label className="form-label">Contact Number</Form.Label>
-              <Form.Control
-                type="tel"
-                name="contactNumber"
-                placeholder="Enter your contact number"
-                value={formData.contactNumber}
-                onChange={handleInputChange}
-                required
-                className="form-input"
-              />
-            </Form.Group>
+      {/* Form Fields */}
+      <TextField
+        name="fullName"
+        label="Full Name"
+        variant="outlined"
+        fullWidth
+        required
+        value={formData.fullName}
+        onChange={handleChange}
+      />
+      <TextField
+        name="email"
+        label="Email Address"
+        type="email"
+        variant="outlined"
+        fullWidth
+        required
+        value={formData.email}
+        onChange={handleChange}
+      />
+      <TextField
+        name="address"
+        label="Address"
+        variant="outlined"
+        fullWidth
+        required
+        value={formData.address}
+        onChange={handleChange}
+      />
+      <TextField
+        name="phoneNumber"
+        label="Phone Number"
+        type="tel"
+        variant="outlined"
+        fullWidth
+        required
+        value={formData.phoneNumber}
+        onChange={handleChange}
+      />
 
-            <Form.Group controlId="formAddress" className="form-group">
-              <Form.Label className="form-label">Address</Form.Label>
-              <Form.Control
-                type="text"
-                name="address"
-                placeholder="Enter your address"
-                value={formData.address}
-                onChange={handleInputChange}
-                required
-                className="form-input"
-              />
-            </Form.Group>
-
-            <Form.Group controlId="formEmail" className="form-group">
-              <Form.Label className="form-label">Email Address</Form.Label>
-              <Form.Control
-                type="email"
-                name="email"
-                placeholder="Enter your email address"
-                value={formData.email}
-                onChange={handleInputChange}
-                required
-                className="form-input"
-              />
-            </Form.Group>
-
-            <Button variant="primary" type="submit" className="submit-button">
-              Submit
-            </Button>
-          </Form>
-        </Modal.Body>
-      </Modal>
-    </div>
+      {/* Submit Button */}
+      <Button
+        type="submit"
+        variant="contained"
+        color="primary"
+        sx={{ mt: 1, py: 1.5, fontWeight: 'bold' }}
+      >
+        Submit
+      </Button>
+    </Box>
   );
 };
 

@@ -1,6 +1,8 @@
+import React from 'react';
+import { Box, Typography, Paper, Grid, Card, CardContent, CardMedia, Divider } from '@mui/material';
+import Calendar from 'react-calendar';
 import 'react-calendar/dist/Calendar.css';
-import './Event.css';
-import Calendar from 'react-calendar'; // Import react-calendar for the calendar
+import './Event.css'; // Custom styles for extra flair
 
 const EventPrayer = () => {
   const events = [
@@ -10,76 +12,103 @@ const EventPrayer = () => {
     { date: '2024-12-20', name: 'Christmas Celebration', description: 'Celebrate the birth of Christ with us.' },
   ];
 
-  // Filter out past events, keeping only future events
   const upcomingEvents = events.filter(event => new Date(event.date) > new Date());
 
   return (
-    <div>
+    <Box sx={{ py: 6, px: 4, backgroundColor: '#f9f9f9' }}>
       {/* Header Section */}
-      <div className="events-header">
-        <h1>Upcoming Worship Service</h1>
-        <p>Join us for inspiring worship and prayer events at Zoe International Ministries.</p>
-      </div>
+      <Paper elevation={3} sx={{ py: 4, textAlign: 'center', backgroundColor: '#0d47a1', color: '#ffffff' }}>
+        <Typography variant="h3" fontWeight={700}>
+          Upcoming Worship Services
+        </Typography>
+        <Typography variant="h6" mt={2} fontWeight={400}>
+          Join us for inspiring worship and prayer events at Zoe International Ministries.
+        </Typography>
+      </Paper>
 
-      {/* Main Content Container */}
-      <div className="events-container">
-        <div className="events-content">
-          
-          {/* Left Column: Calendar */}
-          <div className="left-column">
-            <div className="calendar-section">
-              <Calendar />
-              <h3>Upcoming Events:</h3>
-              <div className="upcoming-events-list">
-                {upcomingEvents.map((event, index) => (
-                  <div key={index} className="event-item">
-                    <h4>{event.name}</h4>
-                    <p>{event.date}</p>
-                    <p>{event.description}</p>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
+      <Grid container spacing={4} mt={4}>
+        {/* Left Column: Calendar and Upcoming Events */}
+        <Grid item xs={12} md={6}>
+          <Paper elevation={3} sx={{ p: 3, borderRadius: '12px' }}>
+            <Typography variant="h5" mb={2} fontWeight={600} color="primary">
+              Event Calendar
+            </Typography>
+            <Calendar />
+            <Divider sx={{ my: 3 }} />
+            <Typography variant="h5" fontWeight={600} mb={2} color="primary">
+              Upcoming Events
+            </Typography>
+            {upcomingEvents.map((event, index) => (
+              <Box key={index} sx={{ mb: 3 }}>
+                <Typography variant="h6" fontWeight={600}>
+                  {event.name}
+                </Typography>
+                <Typography variant="subtitle2" color="textSecondary">
+                  {event.date}
+                </Typography>
+                <Typography variant="body2" color="textPrimary">
+                  {event.description}
+                </Typography>
+              </Box>
+            ))}
+          </Paper>
+        </Grid>
 
-          {/* Right Column: Event Image & Highlights */}
-          <div className="right-column">
-            {/* Events Highlights Section */}
-            <section className="upcoming-events stylish-section">
-              <div className="container">
-                <h2>Events & Highlights</h2>
-                <div className="grid-container">
-                  {/* Video Highlights */}
-                  <div className="grid-item">
-                    <h3>Sunday Sermon Highlights</h3>
-                    <iframe
-                      className="video-frame"
-                      src="https://www.youtube.com/embed/sampleVideoId"
-                      title="Sunday Sermon Highlights"
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                      allowFullScreen
-                    ></iframe>
-                    <p>Watch highlights from our recent sermons.</p>
-                  </div>
+        {/* Right Column: Events Highlights */}
+        <Grid item xs={12} md={6}>
+          <Paper elevation={3} sx={{ p: 3, borderRadius: '12px' }}>
+            <Typography variant="h5" mb={3} fontWeight={600} color="primary">
+              Events & Highlights
+            </Typography>
+            <Grid container spacing={2}>
+              {/* Highlight 1 */}
+              <Grid item xs={12} sm={6}>
+                <Card sx={{ maxWidth: 345, boxShadow: '0 4px 8px rgba(0, 0, 0, 0.2)' }}>
+                  <CardMedia
+                    component="iframe"
+                    height="200"
+                    src="https://www.youtube.com/embed/sampleVideoId"
+                    title="Sunday Sermon Highlights"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                  />
+                  <CardContent>
+                    <Typography variant="h6" fontWeight={600}>
+                      Sunday Sermon Highlights
+                    </Typography>
+                    <Typography variant="body2" color="textSecondary">
+                      Watch highlights from our recent sermons.
+                    </Typography>
+                  </CardContent>
+                </Card>
+              </Grid>
 
-                  <div className="grid-item">
-                    <h3>Weekly Bible Study Highlights</h3>
-                    <iframe
-                      className="video-frame"
-                      src="https://www.youtube.com/embed/sampleVideoId"
-                      title="Weekly Bible Study Highlights"
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                      allowFullScreen
-                    ></iframe>
-                    <p>Catch up on the latest Bible study sessions.</p>
-                  </div>
-                </div>
-              </div>
-            </section>
-          </div>
-        </div>
-      </div>
-    </div>
+              {/* Highlight 2 */}
+              <Grid item xs={12} sm={6}>
+                <Card sx={{ maxWidth: 345, boxShadow: '0 4px 8px rgba(0, 0, 0, 0.2)' }}>
+                  <CardMedia
+                    component="iframe"
+                    height="200"
+                    src="https://www.youtube.com/embed/sampleVideoId"
+                    title="Weekly Bible Study Highlights"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                  />
+                  <CardContent>
+                    <Typography variant="h6" fontWeight={600}>
+                      Weekly Bible Study Highlights
+                    </Typography>
+                    <Typography variant="body2" color="textSecondary">
+                      Catch up on the latest Bible study sessions.
+                    </Typography>
+                  </CardContent>
+                </Card>
+              </Grid>
+            </Grid>
+          </Paper>
+        </Grid>
+      </Grid>
+    </Box>
   );
 };
 
