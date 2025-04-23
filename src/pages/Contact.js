@@ -1,7 +1,7 @@
 import React from 'react';
 import { FaFacebook, FaTwitter, FaInstagram } from 'react-icons/fa';
 import './ContactUs.css';
-import danSuniImage from '../pages/Images/Dan_Suni_Intro.png'; // Adjust path if needed
+import danSuniImage from '../pages/Images/Dan_Suni_Intro.png'; // Adjust path
 
 const pastors = [
   {
