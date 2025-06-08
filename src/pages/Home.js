@@ -29,7 +29,7 @@ const Home = () => {
             <p>Sunday Worship Service</p>
           </div>
           <div className="carousel-slide">
-            <img src="./Prayerdiverse.jpg" alt="Community Prayer" />
+            <img src="./PrayerImg.jpg" alt="Community Prayer" />
             <p>Community Prayer Gathering</p>
           </div>
           <div className="carousel-slide">
@@ -96,11 +96,11 @@ const Home = () => {
           <div className="grid-container">
             {/* YouTube Video */}
             <div className="grid-item">
-              <h3>Sunday Sermon Highlights</h3>
+              <h3>Worship Sermon Highlights</h3>
               <iframe
                 className="video-frame"
                 src="https://www.youtube.com/embed/fOB73qRVGJs?start=1197"
-                title="Sunday Sermon Highlights"
+                title="Worship Sermon Highlights"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
               ></iframe>
@@ -115,7 +115,7 @@ const Home = () => {
               </p>
               <p><strong>Date:</strong> First Saturday of every month</p>
               <p><strong>Time:</strong> 06:00 PM - 10:00 PM</p>
-              <p><strong>Location:</strong> 500 Central Park, Brampton</p>
+              <p><strong>Location:</strong> 101 West drive, Brampton</p>
             </div>
 
             {/* Weekly Bible Study */}
