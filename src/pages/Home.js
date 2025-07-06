@@ -53,7 +53,7 @@ const Home = () => {
           <h2>Our Mission</h2>
           <p>
             <strong>
-              "We glorify God by sharing His love, fostering relationships, and empowering faith through worship, service, and teaching, 
+              "We glorify God by sharing his love, fostering relationships, and empowering faith through worship, service, and teaching, 
               creating a vibrant Fellowship of transformed lives."
             </strong>
           </p>
