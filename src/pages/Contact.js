@@ -11,7 +11,7 @@ const pastors = [
       facebook: "https://www.facebook.com/sunitha.daniel.1",
       twitter: "https://twitter.com/zoe",
       instagram: "https://instagram.com/daniel",
-      youtube: "https://www.youtube.com/", // add if you want
+      youtube: "https://www.youtube.com/", 
     },
   },
   {
