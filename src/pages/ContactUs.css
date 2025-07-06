@@ -41,7 +41,11 @@
   height: 200px;
   overflow: hidden;
 }
-
+.hero-image {
+  width: 100%;
+  height: 75vh;
+  object-fit: cover;
+}
 .pastor-image {
   width: 100%;
   height: 200px; /* Adjust height to fit grid structure */
